@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <meta name="robots" content="noindex, nofollow">
+  
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Page templates | U.S. Web Design System (USWDS)</title>
+<meta property="og:title" content="Page templates | U.S. Web Design System (USWDS)">
+
+
+<meta name="description" content="These templates for a landing page and a documentation page are built from USWDS components. Each of these pages is flexible; you can add or remove components or subcomponents to suit your needs. These templates are great starting point for prototyping or for trying USWDS to see if it’s a good fit for your project.">
+<meta property="og:description" content="These templates for a landing page and a documentation page are built from USWDS components. Each of these pages is flexible; you can add or remove components or subcomponents to suit your needs. These templates are great starting point for prototyping or for trying USWDS to see if it’s a good fit for your project.">
+
+<meta name="twitter:card" value="summary">
+<meta name="twitter:site" content="@USWDS">
+<meta property="og:type" content="article">
+
+
+
+
+
+  
+  <meta property="og:image" content="/HCD-Discovery-Concept-Guide/img/uswds-logo/lg-black.png">
+
+
+
+
+<!-- Include Typetura Responsive Typography
+================================================== -->
+<script src="https://typetura-civic.s3.us-east-2.amazonaws.com/typetura.js"></script>
+<link rel="stylesheet" href="https://typetura-civic.s3.us-east-2.amazonaws.com/civic.css" />
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-192.png">
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+<!-- env: dev -->
+
+<style>
+  * {
+    scroll-behavior: smooth !important
+  }
+  h1:target,
+  h2:target,
+  h3:target,
+  h4:target {
+    position: relative;
+    color: #2672de !important;
+  }
+
+  h1:target:before,
+  h2:target:before,
+  h3:target:before,
+  h4:target:before {
+    content: '•';
+    position: absolute;
+    left: -.75em;
+  }
+</style>
+
+
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-fonts.css">
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-components.css">
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-custom.css">
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-utilities.css">
+
+
+  </head>
+  <body class="page-page-templates layout-styleguide ">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+<header class="usa-header site-header site-header-dark" role="banner">
+  <div class="">
+    <div class="usa-logo site-logo" id="logo">
+      <em class="usa-logo__text">
+        <a class="margin-right-05" href="/HCD-Discovery-Concept-Guide/" title="Home" aria-label="U.S. Web Design System (USWDS) home">
+          <span class="site-title">HCD Guide Series</span>
+        </a>
+      </em>
+    </div>
+    <button class="usa-menu-btn">Menu</button>
+  </div>
+</header>
+<div class="usa-overlay"></div>
+
+<nav role="navigation" class="usa-nav site-nav sidenav-mobile">
+  <button class="usa-nav__close">
+    <span class="usa-sr-only">Close</span>
+  </button>
+
+  <form
+    id="search_form-mobile"
+    class="usa-search usa-search--small desktop:margin-right-4"
+    action="https://search.usa.gov/search"
+    accept-charset="UTF-8"
+    method="get">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <input type="hidden" name="affiliate" id="affiliate-mobile" value="uswds" />
+    <div role="search">
+      <label class="usa-sr-only" for="query-mobile">Search</label>
+      <input
+        id="query-mobile"
+        class="usa-input usagov-search-autocomplete"
+        name="query"
+        type="search"
+        autocomplete="off"/>
+      <button
+        class="usa-button margin-top-0"
+        type="submit"
+        name="commit">
+        <span class="usa-sr-only">Search</span>
+      </button>
+    </div>
+  </form>
+  <div class="usa-nav__inner">
+    <ul class="usa-nav__primary usa-accordion">
+      
+
+    </ul>
+    <div class="buttons">
+  <a
+    class="usa-button site-button-outline-secondary site-button-standards margin-x-0 desktop:margin-right-1 padding-x-05 desktop:padding-left-1 desktop:padding-right-05 desktop-lg:padding-left-205 desktop-lg:padding-right-2 font-lang-sm"
+    href="/HCD-Discovery-Concept-Guide/website-standards/"
+    onclick="ga('send', 'event', 'Read website standards', 'Clicked Read website standards from inside site');"
+  >
+    Read website standards
+  </a>
+  <a
+    class="usa-button site-button-outline-secondary site-button-download margin-x-0 desktop:margin-right-1 desktop:padding-left-1 desktop:padding-right-05 desktop-lg:padding-left-205 desktop-lg:padding-right-2 font-lang-sm"
+    href="/HCD-Discovery-Concept-Guide/download/"
+    onclick="ga('send', 'event', 'Downloaded code and design files', 'Clicked Download code and design files from inside site');"
+  >
+    Download <span class="version desktop:display-none desktop-lg:display-inline">v2.6.0</span>
+  </a>
+  <a
+    class="usa-button site-button-github margin-x-0 desktop:margin-right-4 font-lang-sm"
+    href="https://github.com/uswds/uswds"
+    onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');"
+  >
+    <?xml version="1.0" encoding="UTF-8"?><svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="33"
+  height="32"
+  viewBox="0 0 33 32"
+  class="logo"
+>
+  <title>Github logo</title>
+  <path
+    fill="#161514"
+    fill-rule="evenodd"
+    d="M16.288 0C7.294 0 0 7.293 0 16.29c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 1.635.115 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 1.367-.438 4.479 1.67a15.602 15.602 0 0 1 4.078-.549 15.62 15.62 0 0 1 4.078.549c3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 4.311 1.044 1.138 1.674 2.593 1.674 4.371 0 6.258-3.809 7.635-7.437 8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455C32.579 7.293 25.285 0 16.288 0"
+  />
+</svg>
+
+    <span class="text">View on GitHub</span>
+  </a>
+</div>
+
+
+  </div>
+</nav>
+
+
+<div class="default-container">
+  <aside class="sidenav">
+    
+    
+    <ul class="site-sidenav usa-sidenav">
+      
+  
+
+  
+  <li class="usa-sidenav__item is-current">
+    
+
+<a href="/HCD-Discovery-Concept-Guide/page-templates/"class="usa-current">
+  
+    Page templates
+  
+</a>
+
+    
+    
+    
+    <ul class="usa-sidenav__sublist">
+  
+  <li class="usa-sidenav__item is-current">
+    
+
+
+<a href="#landing-page">Landing page</a>
+
+    
+  </li>
+
+  
+  <li class="usa-sidenav__item is-current">
+    
+
+
+<a href="#documentation-page">Documentation page</a>
+
+    
+  </li>
+
+</ul>
+    
+  
+
+
+    
+  </li>
+
+
+    </ul>
+    
+  </aside>
+
+  <main id="main-content" class="main-content">
+
+    <div class="styleguide-content usa-prose site-prose">
+      <header>
+        
+          
+            <p class="site-subheading">Page templates</p>
+          
+        
+        <h1 id="page-templates" class="site-page-title">Page templates</h1>
+        
+      </header>
+
+      <p class="site-text-intro">These templates for a landing page and a documentation page are built from USWDS components. Each of these pages is flexible; you can add or remove components or subcomponents to suit your needs. These templates are great starting point for prototyping or for trying USWDS to see if it’s a good fit for your project.</p>
+
+
+
+
+      <section class="site-component-section margin-top-5">
+  <h2 class="usa-heading" id="landing-page">Landing page</h2>
+  <p class="site-text-intro">Provide someone’s first impression of your agency or program. </p>
+  <p>Often, site users arrive at a landing page without much context, like a search result or a colleague’s email. So a landing page needs to be clear, engaging, and contextualizing.</p>
+  <div class="preview">
+    <a class="media_link" href="https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds/release-2.6.0/components/preview/layout--landing.html">
+      <img src="/HCD-Discovery-Concept-Guide/assets/img/templates/layout--landing.png" alt="Basic header">
+    </a>
+    <a class="usa-button" href="https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds/release-2.6.0/components/preview/layout--landing.html">Demo landing page template</a>
+  </div>
+  <div class="usa-accordion usa-accordion--bordered site-accordion-code">
+  
+  <button class="usa-accordion__button" aria-controls="code-template-landing">Component code</button>
+  <div id="code-template-landing" class="usa-accordion__content">
+    
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+</pre></td><td class="code"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"usa-skipnav"</span> <span class="na">href=</span><span class="s">"#main-content"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
+  
+
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"usa-banner"</span> <span class="na">aria-label=</span><span class="s">"Official government website"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-accordion"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"usa-banner__header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-banner__inner"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-col-auto"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"usa-banner__header-flag"</span> <span class="na">src=</span><span class="s">"/HCD-Discovery-Concept-Guide/assets/img/us_flag_small.png"</span> <span class="na">alt=</span><span class="s">"U.S. flag"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-col-fill tablet:grid-col-auto"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"usa-banner__header-text"</span><span class="nt">&gt;</span>An official website of the United States government<span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"usa-banner__header-action"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>Here’s how you know<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion__button usa-banner__button"</span>
+          <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"gov-banner"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"usa-banner__button-text"</span><span class="nt">&gt;</span>Here’s how you know<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/header&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-banner__content usa-accordion__content"</span> <span class="na">id=</span><span class="s">"gov-banner"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-row grid-gap-lg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-banner__guidance tablet:grid-col-6"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"usa-banner__icon usa-media-block__img"</span> <span class="na">src=</span><span class="s">"/HCD-Discovery-Concept-Guide/assets/img/icon-dot-gov.svg"</span> <span class="na">alt=</span><span class="s">"Dot gov"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-media-block__body"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>
+              <span class="nt">&lt;strong&gt;</span>The .gov means it’s official.<span class="nt">&lt;/strong&gt;</span>
+              <span class="nt">&lt;br&gt;</span>
+              Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+            <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-banner__guidance tablet:grid-col-6"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"usa-banner__icon usa-media-block__img"</span> <span class="na">src=</span><span class="s">"/HCD-Discovery-Concept-Guide/assets/img/icon-https.svg"</span> <span class="na">alt=</span><span class="s">"Https"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-media-block__body"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>
+              <span class="nt">&lt;strong&gt;</span>The site is secure.<span class="nt">&lt;/strong&gt;</span>
+              <span class="nt">&lt;br&gt;</span>
+              The <span class="nt">&lt;strong&gt;</span>https://<span class="nt">&lt;/strong&gt;</span> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+            <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+
+  
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-overlay"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"usa-header usa-header--extended"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"usa-navbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-logo"</span> <span class="na">id=</span><span class="s">"extended-logo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">"usa-logo__text"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">title=</span><span class="s">"Home"</span> <span class="na">aria-label=</span><span class="s">"Home"</span><span class="nt">&gt;</span>Project title<span class="nt">&lt;/a&gt;&lt;/em&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-menu-btn"</span><span class="nt">&gt;</span>Menu<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"Primary navigation"</span> <span class="na">class=</span><span class="s">"usa-nav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-nav__inner"</span><span class="nt">&gt;&lt;button</span> <span class="na">class=</span><span class="s">"usa-nav__close"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/HCD-Discovery-Concept-Guide/assets/img/close.svg"</span> <span class="na">alt=</span><span class="s">"close"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-nav__primary usa-accordion"</span><span class="nt">&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__primary-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion__button usa-nav__link  usa-current"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"extended-nav-section-one"</span><span class="nt">&gt;&lt;span&gt;</span>Current section<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"extended-nav-section-one"</span> <span class="na">class=</span><span class="s">"usa-nav__submenu"</span><span class="nt">&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__submenu-item"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Navigation link<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__submenu-item"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Navigation link<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__submenu-item"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Navigation link<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__primary-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion__button usa-nav__link"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"extended-nav-section-two"</span><span class="nt">&gt;&lt;span&gt;</span>Section<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"extended-nav-section-two"</span> <span class="na">class=</span><span class="s">"usa-nav__submenu"</span><span class="nt">&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__submenu-item"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Navigation link<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__submenu-item"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Navigation link<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__submenu-item"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Navigation link<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__primary-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"usa-nav__link"</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span><span class="nt">&gt;&lt;span&gt;</span>Simple link<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;div</span> <span class="na">class=</span><span class="s">"usa-nav__secondary"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-nav__secondary-links"</span><span class="nt">&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__secondary-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>Secondary link<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__secondary-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>Another secondary link<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;form</span> <span class="na">class=</span><span class="s">"usa-search usa-search--small "</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span> <span class="na">for=</span><span class="s">"extended-search-field-small"</span><span class="nt">&gt;</span>Search small<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"usa-input"</span> <span class="na">id=</span><span class="s">"extended-search-field-small"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-button"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+
+
+  
+
+<span class="nt">&lt;main</span> <span class="na">id=</span><span class="s">"main-content"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"usa-hero"</span> <span class="na">aria-label=</span><span class="s">"Introduction"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-hero__callout"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"usa-hero__heading"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"usa-hero__heading--alt"</span><span class="nt">&gt;</span>Hero callout:<span class="nt">&lt;/span&gt;</span>Bring attention to a project priority
+      <span class="nt">&lt;/h1&gt;&lt;p&gt;</span>Support the callout with some short explanatory text. You don’t need more than a couple of sentences.<span class="nt">&lt;/p&gt;&lt;a</span> <span class="na">class=</span><span class="s">"usa-button"</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span><span class="nt">&gt;</span>Call to action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+
+  
+  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"grid-container usa-section"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-row grid-gap"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tablet:grid-col-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"font-heading-xl margin-top-0 tablet:margin-bottom-0"</span><span class="nt">&gt;</span>A tagline highlights your approach<span class="nt">&lt;/h2&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tablet:grid-col-8 usa-prose"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;p&gt;</span>The tagline should inspire confidence and interest, focusing on the value that your overall approach offers to your audience. Use a heading typeface and keep your tagline to just a few words, and don’t confuse or mystify.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Use the right side of the grid to explain the tagline a bit more. What are your goals? How do you do your work? Write in the present tense, and stay brief here. People who are interested can find details on internal pages.<span class="nt">&lt;/p&gt;</span>
+
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/section&gt;</span>
+  
+
+  <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"usa-graphic-list usa-section usa-section--dark"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-graphic-list__row grid-row grid-gap"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-media-block tablet:grid-col"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"usa-media-block__img"</span>  <span class="na">src=</span><span class="s">"/HCD-Discovery-Concept-Guide/assets/img/circle-124.png"</span> <span class="na">alt=</span><span class="s">"Alt text"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-media-block__body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"usa-graphic-list__heading"</span><span class="nt">&gt;</span>Graphic headings can vary.<span class="nt">&lt;/h2&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Graphic headings can be used a few different ways, depending on what your landing page is for. Highlight your values, specific program areas, or results.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-media-block tablet:grid-col"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"usa-media-block__img"</span>  <span class="na">src=</span><span class="s">"/HCD-Discovery-Concept-Guide/assets/img/circle-124.png"</span> <span class="na">alt=</span><span class="s">"Alt text"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-media-block__body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"usa-graphic-list__heading"</span><span class="nt">&gt;</span>Stick to 6 or fewer words.<span class="nt">&lt;/h2&gt;</span>
+          <span class="nt">&lt;p&gt;</span>Keep body text to about 30 words. They can be shorter, but try to be somewhat balanced across all four. It creates a clean appearance with good spacing.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-graphic-list__row grid-row grid-gap"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-media-block tablet:grid-col"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"usa-media-block__img"</span>  <span class="na">src=</span><span class="s">"/HCD-Discovery-Concept-Guide/assets/img/circle-124.png"</span> <span class="na">alt=</span><span class="s">"Alt text"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-media-block__body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"usa-graphic-list__heading"</span><span class="nt">&gt;</span>Never highlight anything without a goal.<span class="nt">&lt;/h2&gt;</span>
+          <span class="nt">&lt;p&gt;</span>For anything you want to highlight here, understand what your users know now, and what activity or impression you want from them after they see it.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-media-block tablet:grid-col"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"usa-media-block__img"</span>  <span class="na">src=</span><span class="s">"/HCD-Discovery-Concept-Guide/assets/img/circle-124.png"</span> <span class="na">alt=</span><span class="s">"Alt text"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-media-block__body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"usa-graphic-list__heading"</span><span class="nt">&gt;</span>Could also have 2 or 6.<span class="nt">&lt;/h2&gt;</span>
+          <span class="nt">&lt;p&gt;</span>In addition to your goal, find out your users’ goals. What do they want to know or do that supports your mission? Use these headings to show those.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+
+  <span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">"test-section-id"</span> <span class="na">class=</span><span class="s">"usa-section"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-container"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"font-heading-xl margin-y-0"</span><span class="nt">&gt;</span>Section heading<span class="nt">&lt;/h2&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"usa-intro"</span><span class="nt">&gt;</span>Everything up to this point should help people understand your agency or project: who you are, your goal or mission, and how you approach it. Use this section to encourage them to act. Describe why they should get in touch here, and use an active verb on the button below. “Get in touch,” “Learn more,” and so on.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"usa-button usa-button--big"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Call to action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/section&gt;</span>
+
+<span class="nt">&lt;/main&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+
+  </div>
+</div>
+
+  <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
+    <button class="usa-button-unstyled usa-accordion__button"
+      aria-expanded="true" aria-controls="docs-page-template-landing">
+      Guidance
+    </button>
+    <div id="docs-page-template-landing" class="usa-accordion__content site-component-usage">
+      <h4 class="usa-heading">When to use the landing page template</h4>
+      <ul class="usa-content-list">
+        <li><strong>Introducing a new program.</strong> If you are introducing a new program to the public through a marketing or publicity campaign, a landing page is a good place to point links at. It can build on the minimal copy of a campaign without overwhelming readers.</li>
+      </ul>
+      <h4 class="usa-heading">When to avoid</h4>
+      <ul class="usa-content-list">
+        <li><strong>Internal pages.</strong> Don’t use a landing page for standard internal page content. The same things that help people understand basics quickly can become distracting for people who are looking for more depth.</li>
+      </ul>
+      <h4 class="usa-heading">Usability guidance</h4>
+      <ul class="usa-content-list">
+        <li><strong>Remember to do your research.</strong> The landing page can be a good model for a homepage. But do some research first. What do you have to say? What do your users need to know? Figure these things out. It’s important to know what you have to say about your organization before you settle on a homepage design.</li>
+        <li><strong>Don’t make it too complicated.</strong> Don’t try to include forms or side navigation in a page like this. Those are visually complex components, and a landing page works best without too much complexity.</li>
+        <li><strong>Simple pages may not need a header.</strong> If you are using the landing page to encourage users to follow a primary call to action, consider getting rid of the header. The less there is to distract people from the most important task, the more often they will do it.</li>
+        <li><strong>Remove unnecessary elements.</strong> Do not create extra content just to fill the template. You can remove individual components (such as the media block) or sub-components (such as individual menu items in the header) from the template as you implement it. This version gives you a broad idea of the number of things your landing page could include. But never make a page more complex than you need to. If you’re unsure, interview users to find out what they need to know.</li>
+        <li><strong>See component-specific guidance.</strong> For guidance on specific components, see the pages for the individual components.</li>
+      </ul>
+      <h4 class="usa-heading">Components used in this template</h4>
+      <ul class="usa-list">
+        <li>Extended header</li>
+        <li>Hero feature</li>
+        <li>Graphic list</li>
+        <li>Media block</li>
+        <li>Grid</li>
+        <li>Buttons</li>
+        <li>Medium footer</li>
+      </ul>
+      <h4 class="usa-heading">Component definitions</h4>
+      <ul class="usa-content-list">
+        <li><strong>Hero feature</strong>: Hero features are used at the top of your landing page to help set the tone for the content of your site and to help users understand what your brand is all about. The Hero feature offers a callout which provides a high-level overview of the content on the site and will often reference the Hero image that sits behind it.</li>
+        <li><strong>Graphic list</strong>: The Graphic list is used to showcase a number of related items and their respective images in a grid pattern.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="site-component-section">
+  <h2 class="usa-heading" id="documentation-page">Documentation page</h2>
+  <p class="site-text-intro">Present information on a certain theme, topic, or idea.</p>
+  <p>People often arrive at a documentation page after visiting the landing page or after searching for a specific piece of information, so documentation pages don’t need to provide as much contextualizing information as more introductory pages would. The copy should be clear, focused, and concise.</p>
+  <div class="preview">
+    <a class="media_link" href="https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds/release-2.6.0/components/preview/layout--docs.html">
+      <img src="/HCD-Discovery-Concept-Guide/assets/img/templates/layout--docs.png" alt="Basic header">
+    </a>
+    <a class="usa-button" href="https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds/release-2.6.0/components/preview/layout--docs.html">Demo documentation template</a>
+  </div>
+  <div class="usa-accordion usa-accordion--bordered site-accordion-code">
+  
+  <button class="usa-accordion__button" aria-controls="code-template-docs">Component code</button>
+  <div id="code-template-docs" class="usa-accordion__content">
+    
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+</pre></td><td class="code"><pre><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"usa-skipnav"</span> <span class="na">href=</span><span class="s">"#main-content"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
+  
+
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"usa-banner"</span> <span class="na">aria-label=</span><span class="s">"Official government website"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-accordion"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"usa-banner__header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-banner__inner"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-col-auto"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"usa-banner__header-flag"</span> <span class="na">src=</span><span class="s">"/HCD-Discovery-Concept-Guide/assets/img/us_flag_small.png"</span> <span class="na">alt=</span><span class="s">"U.S. flag"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-col-fill tablet:grid-col-auto"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"usa-banner__header-text"</span><span class="nt">&gt;</span>An official website of the United States government<span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"usa-banner__header-action"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>Here’s how you know<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion__button usa-banner__button"</span>
+          <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"gov-banner"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"usa-banner__button-text"</span><span class="nt">&gt;</span>Here’s how you know<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/header&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-banner__content usa-accordion__content"</span> <span class="na">id=</span><span class="s">"gov-banner"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-row grid-gap-lg"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-banner__guidance tablet:grid-col-6"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"usa-banner__icon usa-media-block__img"</span> <span class="na">src=</span><span class="s">"/HCD-Discovery-Concept-Guide/assets/img/icon-dot-gov.svg"</span> <span class="na">alt=</span><span class="s">"Dot gov"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-media-block__body"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>
+              <span class="nt">&lt;strong&gt;</span>The .gov means it’s official.<span class="nt">&lt;/strong&gt;</span>
+              <span class="nt">&lt;br&gt;</span>
+              Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+            <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-banner__guidance tablet:grid-col-6"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"usa-banner__icon usa-media-block__img"</span> <span class="na">src=</span><span class="s">"/HCD-Discovery-Concept-Guide/assets/img/icon-https.svg"</span> <span class="na">alt=</span><span class="s">"Https"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-media-block__body"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>
+              <span class="nt">&lt;strong&gt;</span>The site is secure.<span class="nt">&lt;/strong&gt;</span>
+              <span class="nt">&lt;br&gt;</span>
+              The <span class="nt">&lt;strong&gt;</span>https://<span class="nt">&lt;/strong&gt;</span> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+            <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+
+  
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-overlay"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"usa-header usa-header--basic"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-nav-container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-navbar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-logo"</span> <span class="na">id=</span><span class="s">"basic-logo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;em</span> <span class="na">class=</span><span class="s">"usa-logo__text"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">title=</span><span class="s">"Home"</span> <span class="na">aria-label=</span><span class="s">"Home"</span><span class="nt">&gt;</span>Project title<span class="nt">&lt;/a&gt;&lt;/em&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-menu-btn"</span><span class="nt">&gt;</span>Menu<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"Primary navigation"</span> <span class="na">class=</span><span class="s">"usa-nav"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-nav__close"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"/HCD-Discovery-Concept-Guide/assets/img/close.svg"</span> <span class="na">alt=</span><span class="s">"close"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-nav__primary usa-accordion"</span><span class="nt">&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__primary-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion__button usa-nav__link  usa-current"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"basic-nav-section-one"</span><span class="nt">&gt;&lt;span&gt;</span>Current section<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"basic-nav-section-one"</span> <span class="na">class=</span><span class="s">"usa-nav__submenu"</span><span class="nt">&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__submenu-item"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Navigation link<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__submenu-item"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Navigation link<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__submenu-item"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Navigation link<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__primary-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-accordion__button usa-nav__link"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"basic-nav-section-two"</span><span class="nt">&gt;&lt;span&gt;</span>Section<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"basic-nav-section-two"</span> <span class="na">class=</span><span class="s">"usa-nav__submenu"</span><span class="nt">&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__submenu-item"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Navigation link<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__submenu-item"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Navigation link<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__submenu-item"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Navigation link<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-nav__primary-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"usa-nav__link"</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span><span class="nt">&gt;&lt;span&gt;</span>Simple link<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;form</span> <span class="na">class=</span><span class="s">"usa-search usa-search--small "</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span> <span class="na">for=</span><span class="s">"basic-search-field-small"</span><span class="nt">&gt;</span>Search small<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"usa-input"</span> <span class="na">id=</span><span class="s">"basic-search-field-small"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"usa-button"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"usa-sr-only"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+
+
+  
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-section"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"grid-row grid-gap"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"usa-layout-docs__sidenav desktop:grid-col-3"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"Secondary navigation"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"usa-sidenav"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-sidenav__item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>Parent link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-sidenav__item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"usa-current"</span><span class="nt">&gt;</span>Current page<span class="nt">&lt;/a&gt;&lt;ul</span> <span class="na">class=</span><span class="s">"usa-sidenav__sublist"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-sidenav__item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>Child link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-sidenav__item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"usa-current"</span><span class="nt">&gt;</span>Child link<span class="nt">&lt;/a&gt;&lt;ul</span> <span class="na">class=</span><span class="s">"usa-sidenav__sublist"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"usa-sidenav__item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>Grandchild link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-sidenav__item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>Grandchild link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-sidenav__item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"usa-current"</span><span class="nt">&gt;</span>Grandchild link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-sidenav__item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>Grandchild link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-sidenav__item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>Child link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-sidenav__item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>Child link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-sidenav__item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>Child link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/li&gt;&lt;li</span> <span class="na">class=</span><span class="s">"usa-sidenav__item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;</span>Parent link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+
+      <span class="nt">&lt;/div&gt;</span>
+
+      <span class="nt">&lt;main</span> <span class="na">class=</span><span class="s">"usa-layout-docs__main desktop:grid-col-9 usa-prose usa-layout-docs"</span> <span class="na">id=</span><span class="s">"main-content"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Page heading (h1)<span class="nt">&lt;/h1&gt;</span>
+
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"usa-intro"</span><span class="nt">&gt;</span>The page heading communicates the main focus of the page. Make your page heading descriptive and keep it succinct.<span class="nt">&lt;/p&gt;</span>
+
+        <span class="nt">&lt;h2</span> <span class="na">id=</span><span class="s">"section-heading-h2"</span><span class="nt">&gt;</span>Section heading (h2)<span class="nt">&lt;/h2&gt;</span>
+
+        <span class="nt">&lt;p&gt;</span>These headings introduce, respectively, sections and subsections within your body copy. As you create these headings, follow the same guidelines that you use when writing section headings: Be succinct, descriptive, and precise.<span class="nt">&lt;/p&gt;</span>
+
+        <span class="nt">&lt;h3</span> <span class="na">id=</span><span class="s">"section-heading-h3"</span><span class="nt">&gt;</span>Subsection heading (h3)<span class="nt">&lt;/h3&gt;</span>
+
+        <span class="nt">&lt;p&gt;</span>The particulars of your body copy will be determined by the topic of your page. Regardless of topic, it’s a good practice to follow the inverted pyramid structure when writing copy: Begin with the information that’s most important to your users and then present information of less importance.<span class="nt">&lt;/p&gt;</span>
+
+        <span class="nt">&lt;p&gt;</span>Keep each section and subsection focused — a good approach is to include one theme (topic) per section.<span class="nt">&lt;/p&gt;</span>
+
+        <span class="nt">&lt;h4</span> <span class="na">id=</span><span class="s">"section-heading-h4"</span><span class="nt">&gt;</span>Subsection heading (h4)<span class="nt">&lt;/h4&gt;</span>
+
+        <span class="nt">&lt;p&gt;</span>Use the side navigation menu to help your users quickly skip to different sections of your page. The menu is best suited to displaying a hierarchy with one to three levels and, as we mentioned, to display the sub-navigation of a given page.<span class="nt">&lt;/p&gt;</span>
+
+        <span class="nt">&lt;p&gt;</span>Read the full documentation on our side navigation on the component page.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/main&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+
+  </div>
+</div>
+
+  <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
+    <button class="usa-button-unstyled usa-accordion__button"
+      aria-expanded="true" aria-controls="docs-page-template-docs">
+      Guidance
+    </button>
+    <div id="docs-page-template-docs" class="usa-accordion__content site-component-usage">
+      <h4 class="usa-heading">When to use the documentation template</h4>
+      <ul class="usa-content-list">
+        <li><strong>Detailed information on a specific topic.</strong> If you’re presenting detailed information on a specific topic or theme that has already been contextualized by a landing page. Some topics that can be nicely represented on this type of page include guides or how-tos, technical documentation, and program descriptions — in short, any subject that requires in-depth explanation.</li>
+      </ul>
+      <h4 class="usa-heading">When to avoid</h4>
+      <ul class="usa-content-list">
+        <li><strong>Introducing a new program.</strong> Don’t use a documentation page to introduce your users to your agency or organization — the landing page is better suited to that purpose. The level of detail present on documentation pages can overwhelm users who are just becoming acquainted with your organization.</li>
+      </ul>
+      <h4 class="usa-heading">Usability guidance</h4>
+      <ul class="usa-content-list">
+        <li><strong>Use a precise headline.</strong> A precise headline quickly communicates your page’s purpose. If the page content is especially complex, you may consider using a subheadline to further clarify its meaning.</li>
+        <li><strong>Write concise copy.</strong> Favor short sentences (and paragraphs) over longer ones, and use straightforward language, avoiding jargon. Remember, copy blocks don’t need to be long to be comprehensive.</li>
+        <li><strong>See component-specific guidance.</strong> For guidance on specific components, see the page for the individual components.</li>
+      </ul>
+      <h4 class="usa-heading">Components used in this template</h4>
+      <ul class="usa-list">
+        <li>Basic header</li>
+        <li>Grid</li>
+        <li>Side navigation</li>
+        <li>Documentation layout</li>
+        <li>Medium footer</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    </div>
+  </main>
+</div>
+
+
+<footer class="usa-footer site-footer" role="contentinfo">
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container footer-content">
+      <h3>Become part of the community</h3>
+      <p>
+        The Lab at OPM is both a space and practice.
+      </p>
+    </div>
+    <div class="footer-section-bottom">
+      <div class="grid-container">
+        <div class="logo-links">
+          <a href="http://www.gsa.gov/">
+            <img src="/HCD-Discovery-Concept-Guide/img/lab-logos/Logo_2017_color_RGB-01.svg" alt="The Lab" />
+          </a>
+        </div>
+        <p>
+          The Lab is part of the Office of Personnel Management.
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>

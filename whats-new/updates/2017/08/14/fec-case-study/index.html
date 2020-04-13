@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <meta name="robots" content="noindex, nofollow">
+  
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>How the FEC.gov team uses the Web Design Standards | U.S. Web Design System (USWDS)</title>
+<meta property="og:title" content="How the FEC.gov team uses the Web Design Standards | U.S. Web Design System (USWDS)">
+
+
+<meta name="description" content="The U.S. Web Design Standards are currently being used on hundreds of government
+sites, with an audience of more than 59 million monthly users. In this eighth
+post in our series, we met with Jennifer Thibault, visual designer and
+innovation specialist, to talk about the Federal Election Commission (FEC)’s use
+of the Standards on fec.gov.">
+<meta property="og:description" content="The U.S. Web Design Standards are currently being used on hundreds of government
+sites, with an audience of more than 59 million monthly users. In this eighth
+post in our series, we met with Jennifer Thibault, visual designer and
+innovation specialist, to talk about the Federal Election Commission (FEC)’s use
+of the Standards on fec.gov.">
+
+<meta name="twitter:card" value="summary">
+<meta name="twitter:site" content="@USWDS">
+<meta property="og:type" content="article">
+
+
+
+
+
+  
+  <meta property="og:image" content="/HCD-Discovery-Concept-Guide/img/uswds-logo/lg-black.png">
+
+
+
+
+<!-- Include Typetura Responsive Typography
+================================================== -->
+<script src="https://typetura-civic.s3.us-east-2.amazonaws.com/typetura.js"></script>
+<link rel="stylesheet" href="https://typetura-civic.s3.us-east-2.amazonaws.com/civic.css" />
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-192.png">
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+<!-- env: dev -->
+
+<style>
+  * {
+    scroll-behavior: smooth !important
+  }
+  h1:target,
+  h2:target,
+  h3:target,
+  h4:target {
+    position: relative;
+    color: #2672de !important;
+  }
+
+  h1:target:before,
+  h2:target:before,
+  h3:target:before,
+  h4:target:before {
+    content: '•';
+    position: absolute;
+    left: -.75em;
+  }
+</style>
+
+
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-fonts.css">
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-components.css">
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-custom.css">
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-utilities.css">
+
+
+  </head>
+  <body class="page-how-the-fec-gov-team-uses-the-web-design-standards layout-post ">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+<header class="usa-header site-header site-header-dark" role="banner">
+  <div class="">
+    <div class="usa-logo site-logo" id="logo">
+      <em class="usa-logo__text">
+        <a class="margin-right-05" href="/HCD-Discovery-Concept-Guide/" title="Home" aria-label="U.S. Web Design System (USWDS) home">
+          <span class="site-title">HCD Guide Series</span>
+        </a>
+      </em>
+    </div>
+    <button class="usa-menu-btn">Menu</button>
+  </div>
+</header>
+<div class="usa-overlay"></div>
+
+<nav role="navigation" class="usa-nav site-nav sidenav-mobile">
+  <button class="usa-nav__close">
+    <span class="usa-sr-only">Close</span>
+  </button>
+
+  <form
+    id="search_form-mobile"
+    class="usa-search usa-search--small desktop:margin-right-4"
+    action="https://search.usa.gov/search"
+    accept-charset="UTF-8"
+    method="get">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <input type="hidden" name="affiliate" id="affiliate-mobile" value="uswds" />
+    <div role="search">
+      <label class="usa-sr-only" for="query-mobile">Search</label>
+      <input
+        id="query-mobile"
+        class="usa-input usagov-search-autocomplete"
+        name="query"
+        type="search"
+        autocomplete="off"/>
+      <button
+        class="usa-button margin-top-0"
+        type="submit"
+        name="commit">
+        <span class="usa-sr-only">Search</span>
+      </button>
+    </div>
+  </form>
+  <div class="usa-nav__inner">
+    <ul class="usa-nav__primary usa-accordion">
+      
+
+    </ul>
+    <div class="buttons">
+  <a
+    class="usa-button site-button-outline-secondary site-button-standards margin-x-0 desktop:margin-right-1 padding-x-05 desktop:padding-left-1 desktop:padding-right-05 desktop-lg:padding-left-205 desktop-lg:padding-right-2 font-lang-sm"
+    href="/HCD-Discovery-Concept-Guide/website-standards/"
+    onclick="ga('send', 'event', 'Read website standards', 'Clicked Read website standards from inside site');"
+  >
+    Read website standards
+  </a>
+  <a
+    class="usa-button site-button-outline-secondary site-button-download margin-x-0 desktop:margin-right-1 desktop:padding-left-1 desktop:padding-right-05 desktop-lg:padding-left-205 desktop-lg:padding-right-2 font-lang-sm"
+    href="/HCD-Discovery-Concept-Guide/download/"
+    onclick="ga('send', 'event', 'Downloaded code and design files', 'Clicked Download code and design files from inside site');"
+  >
+    Download <span class="version desktop:display-none desktop-lg:display-inline">v2.6.0</span>
+  </a>
+  <a
+    class="usa-button site-button-github margin-x-0 desktop:margin-right-4 font-lang-sm"
+    href="https://github.com/uswds/uswds"
+    onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');"
+  >
+    <?xml version="1.0" encoding="UTF-8"?><svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="33"
+  height="32"
+  viewBox="0 0 33 32"
+  class="logo"
+>
+  <title>Github logo</title>
+  <path
+    fill="#161514"
+    fill-rule="evenodd"
+    d="M16.288 0C7.294 0 0 7.293 0 16.29c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 1.635.115 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 1.367-.438 4.479 1.67a15.602 15.602 0 0 1 4.078-.549 15.62 15.62 0 0 1 4.078.549c3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 4.311 1.044 1.138 1.674 2.593 1.674 4.371 0 6.258-3.809 7.635-7.437 8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455C32.579 7.293 25.285 0 16.288 0"
+  />
+</svg>
+
+    <span class="text">View on GitHub</span>
+  </a>
+</div>
+
+
+  </div>
+</nav>
+
+
+<div class="default-container">
+  <aside class="sidenav">
+    
+    
+  </aside>
+
+  <main id="main-content" class="main-content">
+    <div class="styleguide-content usa-prose site-prose">
+    
+      
+<article id="whats-new-updates-2017-08-14-fec-case-study">
+  <header class="post-meta">
+    <p class="post-category site-subheading">
+      case study
+    </p>
+
+    <h1 class="post-title font-lang-11 tablet:font-lang-14 text-thin">
+      
+      How the FEC.gov team uses the Web Design Standards
+      
+    </h1>
+
+    
+    <time class="post-date site-subheading" datetime="2017-08-14T00:00:00">
+      August 14, 2017
+    </time>
+  </header>
+
+  <div class="post-content site-prose measure-4 margin-top-4">
+  
+    <p>The U.S. Web Design Standards are currently being used on hundreds of government
+sites, with an audience of more than 59 million monthly users. In this eighth
+post in our series, we met with Jennifer Thibault, visual designer and
+innovation specialist, to talk about the Federal Election Commission (FEC)’s use
+of the Standards on <a href="https://fec.gov/">fec.gov</a>.</p>
+
+<p><strong>USWDS:</strong> How did you find out about the U.S. Web Design Standards?</p>
+
+<p><strong>Jennifer Thibault:</strong> We knew of the USWDS project early on since it was
+kicked off by a team inside 18F. But, we needed to get out a
+<a href="https://github.com/18F/fec-style/issues/612">basic set of pages and content models</a> on fec.gov before the Standards
+team released their first version.</p>
+
+<p>In 2015, we started with a visual identity audit to show our team what the
+audience was seeing: “Here’s the 12 different ways you’re using your logo and
+the 25 different fonts and all the colors you probably didn’t know were being
+used on your site. Here’s the system you had—whether you knew it or not—and
+let’s make some sense out of it.”</p>
+
+<p>We sent all this research to the Standards team, who at that point, was auditing
+federal sites to gather all the designs and styles happening across government,
+and the FEC became an early research participant.</p>
+
+<p>When the first version of the Standards was released, we updated our patterns
+with components that were similar to what we already had, but kept them styled
+with the FEC’s new visual look and feel.</p>
+
+<p><strong>USWDS:</strong> Which components did you use?</p>
+
+<p><strong>Thibault:</strong> The footer was one of the first things we used. Every agency has
+to customize a little bit, but we followed the information pattern and layout.
+We appreciated that it was a flexible template with a few different options.</p>
+
+<p>We also used the visual styling of the small search bar, the label and some of
+the basic layouts around the navigation, and switched to the Standards’ side
+navigation component once it was released.</p>
+
+<p>More recently, I’ve come to the Standards site for the hero layout, which is a
+really good way to show an image with text over it. Accessibility is baked right
+in to the visual approach—it’s a smart way of having image and text and
+separating them to have high-enough contrast to make it accessible. Many times
+folks put text over an image and think it’s great until they realize it’s not
+legible or accessible for people who can’t see color.</p>
+
+<p>I come back to the Standards, because they have easy-to-use, ready-made
+solutions for many design scenarios the FEC has. No need to reinvent the wheel
+if this looks good and works.</p>
+
+<p><strong>USWDS:</strong> Is there anything the Standards team could do to help
+you in your efforts?</p>
+
+<p><strong>Thibault:</strong> The FEC site has really detailed financial tables and we would
+love to see recommendations for data-heavy sites. It would also help to have
+best practices for how to handle long-form content. The FEC, like other
+agencies, has a lot of compliance guidance, which can result in very long
+pages of content—no matter how far down you distill it.</p>
+
+<p><strong>USWDS:</strong> Advice for other agencies?</p>
+
+<p><strong>Thibault:</strong> It’s really helped us to think about the U.S. Web Design
+Standards as a resource where we can take what’s useful and leave what we don’t
+need. You have a choice. Take the stuff that makes your life easier, use your
+agency’s styles, and leave the rest.</p>
+
+<p>If you decide to add more of the components later, you’re already familiar with
+the resources and the team behind the Standards, because you’ve already been
+asking questions.</p>
+
+<hr />
+
+<p>We’re looking to learn more <a href="/getting-started/showcase/">from agencies that have used the Standards</a>; if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at <a href="mailto:uswebdesignstandards@gsa.gov">uswebdesignstandards@gsa.gov</a>. You can also chat with the team in the new <a href="https://chat.18f.gov/">public Slack channel for the Standards</a>!</p>
+
+  
+  </div>
+</article>
+
+    
+    </div>
+  </main>
+</div>
+
+
+<footer class="usa-footer site-footer" role="contentinfo">
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container footer-content">
+      <h3>Become part of the community</h3>
+      <p>
+        The Lab at OPM is both a space and practice.
+      </p>
+    </div>
+    <div class="footer-section-bottom">
+      <div class="grid-container">
+        <div class="logo-links">
+          <a href="http://www.gsa.gov/">
+            <img src="/HCD-Discovery-Concept-Guide/img/lab-logos/Logo_2017_color_RGB-01.svg" alt="The Lab" />
+          </a>
+        </div>
+        <p>
+          The Lab is part of the Office of Personnel Management.
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>

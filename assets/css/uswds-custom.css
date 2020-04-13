@@ -1,0 +1,5618 @@
+@charset "UTF-8";
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.0.0 Beta 6
+----------------------------------------
+GENERAL SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS style tokens in the documentation:
+https://v2.designsystem.digital.gov/style-tokens
+----------------------------------------
+*/
+/*
+----------------------------------------
+Image Path
+----------------------------------------
+Relative image file path
+----------------------------------------
+*/
+/*
+----------------------------------------
+Show compile warnings
+----------------------------------------
+Show Sass warnings when functions and
+mixins use non-standard tokens.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Namespace
+----------------------------------------
+*/
+/*
+----------------------------------------
+Layout grid
+----------------------------------------
+Should the layout grid classes output
+with !important
+----------------------------------------
+*/
+/*
+----------------------------------------
+Border box sizing
+----------------------------------------
+When set to true, sets the box-sizing
+property of all site elements to
+`border-box`.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Focus styles
+----------------------------------------
+*/
+/*
+----------------------------------------
+Icons
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.0.0 Beta 6
+----------------------------------------
+TYPOGRAPHY SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS typography tokens in the documentation:
+https://v2.designsystem.digital.gov/style-tokens/typography
+----------------------------------------
+*/
+/*
+----------------------------------------
+Root font size
+----------------------------------------
+Setting $theme-respect-user-font-size to
+true sets the root font size to 100% and
+uses ems for media queries
+----------------------------------------
+$theme-root-font-size only applies when
+$theme-respect-user-font-size is set to
+false.
+
+This will set the root font size
+as a specific px value and use px values
+for media queries.
+
+Accepts true or false
+----------------------------------------
+*/
+/*
+----------------------------------------
+Global styles
+----------------------------------------
+Adds basic styling for the following
+unclassed elements:
+
+- paragraph: paragraph text
+- link: links
+- global: paragraph text, links,
+  headings, lists, and tables
+----------------------------------------
+*/
+/*
+----------------------------------------
+Font path
+----------------------------------------
+Relative font file path
+----------------------------------------
+*/
+/*
+----------------------------------------
+Custom typeface tokens
+----------------------------------------
+Add a new custom typeface token if
+your project uses a typeface not already
+defined by USWDS.
+----------------------------------------
+USWDS defines the following tokens
+by default:
+----------------------------------------
+'georgia'
+'helvetica'
+'merriweather'
+'open-sans'
+'public-sans'
+'roboto-mono'
+'source-sans-pro'
+'system'
+'tahoma'
+'verdana'
+----------------------------------------
+Add as many new tokens as you have
+custom typefaces. Reference your new
+token(s) in the type-based font settings
+using the quoted name of the token.
+
+For example:
+
+$theme-font-type-cond: 'example-font-token';
+
+display-name:
+The display name of your font
+
+cap-height:
+The height of a 500px `N` in Sketch
+----------------------------------------
+You should change `example-[style]-token`
+names to something more descriptive.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Type-based font settings
+----------------------------------------
+Set the type-based tokens for your
+project from the following tokens,
+or from any new font tokens you added in
+$theme-typeface-tokens.
+----------------------------------------
+'georgia'
+'helvetica'
+'merriweather'
+'open-sans'
+'public-sans'
+'roboto-mono'
+'source-sans-pro'
+'system'
+'tahoma'
+'verdana'
+----------------------------------------
+*/
+/*
+----------------------------------------
+Custom font stacks
+----------------------------------------
+Add custom font stacks to any of the
+type-based fonts. Any USWDS typeface
+token already has a default stack.
+
+Custom stacks don't need to include the
+font's display name. It will
+automatically appear at the start of
+the stack.
+----------------------------------------
+Example:
+$theme-font-type-sans: 'source-sans-pro';
+$theme-font-sans-custom-stack: "Helvetica Neue", Helvetica, Arial, sans;
+
+Output:
+font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans;
+----------------------------------------
+*/
+/*
+----------------------------------------
+Add any custom font source files
+----------------------------------------
+If you want USWDS to generate additional
+@font-face declarations, add your font
+data below, following the example that
+follows.
+----------------------------------------
+USWDS automatically generates @font-face
+decalarations for the following
+
+'merriweather'
+'public-sans'
+'roboto-mono'
+'source-sans-pro'
+
+These typefaces not require custom
+source files.
+----------------------------------------
+EXAMPLE
+
+- dir:
+  Directory relative to $theme-font-path
+- This directory should include fonts saved as
+  .eot, .ttf, .woff, and .woff2
+  ExampleSerif-Normal.eot
+  ExampleSerif-Normal.ttf
+  ExampleSerif-Normal.woff
+  ExampleSerif-Normal.woff2
+
+$theme-font-serif-custom-src: (
+  dir: 'custom/example-serif',
+  roman: (
+    100: false,
+    200: false,
+    300: 'ExampleSerif-Light',
+    400: 'ExampleSerif-Normal',
+    500: false,
+    600: false,
+    700: 'ExampleSerif-Bold',
+    800: false,
+    900: false,
+  ),
+  italic: (
+    100: false,
+    200: false,
+    300: 'ExampleSerif-LightItalic',
+    400: 'ExampleSerif-Italic',
+    500: false,
+    600: false,
+    700: 'ExampleSerif-BoldItalic',
+    800: false,
+    900: false,
+  ),
+);
+----------------------------------------
+*/
+/*
+----------------------------------------
+Role-based font settings
+----------------------------------------
+Set the role-based tokens for your
+project from the following font-type
+tokens.
+----------------------------------------
+'cond'
+'icon'
+'lang'
+'mono'
+'sans'
+'serif'
+----------------------------------------
+*/
+/*
+----------------------------------------
+Type scale
+----------------------------------------
+Define your project's type scale using
+values from the USWDS system type scale
+
+1-20
+----------------------------------------
+*/
+/*
+----------------------------------------
+Font weights
+----------------------------------------
+Assign weights 100-900
+Or use `false` for unneeded weights.
+----------------------------------------
+*/
+/*
+----------------------------------------
+General typography settings
+----------------------------------------
+Type scale tokens
+----------------------------------------
+micro:      10px
+1:          12px
+2:          13px
+3:          14px
+4:          15px
+5:          16px
+6:          17px
+7:          18px
+8:          20px
+9:          22px
+10:         24px
+11:         28px
+12:         32px
+13:         36px
+14:         40px
+15:         48px
+16:         56px
+17:         64px
+18:         80px
+19:         120px
+20:         140px
+----------------------------------------
+Line height tokens
+----------------------------------------
+1:    1
+2:    1.15
+3:    1.35
+4:    1.5
+5:    1.62
+6:    1.75
+----------------------------------------
+Font role tokens
+----------------------------------------
+'ui'
+'heading'
+'body'
+'code'
+'alt'
+----------------------------------------
+Measure (max-width) tokens
+----------------------------------------
+1:       40ch
+2:       60ch
+3:       66ch
+4:       72ch
+5:       77ch
+none:    none
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.0.0 Beta 6
+----------------------------------------
+SPACING SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS spacing units tokens in the
+documentation:
+https://v2.designsystem.digital.gov/style-tokens/spacing-units
+----------------------------------------
+*/
+/*
+----------------------------------------
+Border radius
+----------------------------------------
+2px           2px
+0.5           4px
+1             8px
+1.5           12px
+2             16px
+2.5           20px
+3             24px
+4             32px
+5             40px
+6             48px
+7             56px
+8             64px
+9             72px
+----------------------------------------
+*/
+/*
+----------------------------------------
+Column gap
+----------------------------------------
+2px         2px
+0.5         4px
+1           8px
+2           16px
+3           24px
+4           32px
+5           40px
+6           48px
+----------------------------------------
+*/
+/*
+----------------------------------------
+Grid container max-width
+----------------------------------------
+mobile
+mobile-lg
+tablet
+tablet-lg
+desktop
+desktop-lg
+widescreen
+----------------------------------------
+*/
+/*
+----------------------------------------
+Site
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.0.0 Beta 6
+----------------------------------------
+COLOR SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS color tokens in the documentation:
+https://v2.designsystem.digital.gov/style-tokens/color
+----------------------------------------
+*/
+/*
+----------------------------------------
+Theme palette colors
+----------------------------------------
+*/
+/*
+----------------------------------------
+State palette colors
+----------------------------------------
+*/
+/*
+----------------------------------------
+General colors
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.0.0 Beta 6
+----------------------------------------
+UTILITIES SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS utilities in the documentation:
+https://v2.designsystem.digital.gov/utilities
+----------------------------------------
+*/
+/*
+----------------------------------------
+Utility breakpoints
+----------------------------------------
+Which breakpoints does your project
+need? Select as `true` any breakpoint
+used by utilities or layout grid
+----------------------------------------
+*/
+/*
+----------------------------------------
+Global colors
+----------------------------------------
+The following palettes will be added to
+- background-color
+- border-color
+- color
+- text-decoration-color
+----------------------------------------
+*/
+/*
+----------------------------------------
+Settings
+----------------------------------------
+*/
+/*
+----------------------------------------
+Values
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.6.0
+----------------------------------------
+GENERAL SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS style tokens in the documentation:
+https://designsystem.digital.gov/design-tokens
+----------------------------------------
+*/
+/*
+----------------------------------------
+Image path
+----------------------------------------
+Relative image file path
+----------------------------------------
+*/
+/*
+----------------------------------------
+Show compile warnings
+----------------------------------------
+Show Sass warnings when functions and
+mixins use non-standard tokens.
+AND
+Show updates and notifications.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Namespace
+----------------------------------------
+*/
+/*
+----------------------------------------
+Layout grid
+----------------------------------------
+Should the layout grid classes output
+with !important
+----------------------------------------
+*/
+/*
+----------------------------------------
+Border box sizing
+----------------------------------------
+When set to true, sets the box-sizing
+property of all site elements to
+`border-box`.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Focus styles
+----------------------------------------
+*/
+/*
+----------------------------------------
+Icons
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.6.0
+----------------------------------------
+TYPOGRAPHY SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS typography tokens in the documentation:
+https://designsystem.digital.gov/design-tokens/typography
+----------------------------------------
+*/
+/*
+----------------------------------------
+Root font size
+----------------------------------------
+Setting $theme-respect-user-font-size to
+true sets the root font size to 100% and
+uses ems for media queries
+----------------------------------------
+$theme-root-font-size only applies when
+$theme-respect-user-font-size is set to
+false.
+
+This will set the root font size
+as a specific px value and use px values
+for media queries.
+
+Accepts true or false
+----------------------------------------
+*/
+/*
+----------------------------------------
+Global styles
+----------------------------------------
+Adds basic styling for the following
+unclassed elements:
+
+- paragraph: paragraph text
+- link: links
+- content: paragraph text, links,
+  headings, lists, and tables
+----------------------------------------
+*/
+/*
+----------------------------------------
+Font path
+----------------------------------------
+Relative font file path
+----------------------------------------
+*/
+/*
+----------------------------------------
+Custom typeface tokens
+----------------------------------------
+Add a new custom typeface token if
+your project uses a typeface not already
+defined by USWDS.
+----------------------------------------
+USWDS defines the following tokens
+by default:
+----------------------------------------
+'georgia'
+'helvetica'
+'merriweather'
+'open-sans'
+'public-sans'
+'roboto-mono'
+'source-sans-pro'
+'system'
+'tahoma'
+'verdana'
+----------------------------------------
+Add as many new tokens as you have
+custom typefaces. Reference your new
+token(s) in the type-based font settings
+using the quoted name of the token.
+
+For example:
+
+$theme-font-type-cond: 'example-font-token';
+
+display-name:
+The display name of your font
+
+cap-height:
+The height of a 500px `N` in Sketch
+----------------------------------------
+You should change `example-[style]-token`
+names to something more descriptive.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Type-based font settings
+----------------------------------------
+Set the type-based tokens for your
+project from the following tokens,
+or from any new font tokens you added in
+$theme-typeface-tokens.
+----------------------------------------
+'georgia'
+'helvetica'
+'merriweather'
+'open-sans'
+'public-sans'
+'roboto-mono'
+'source-sans-pro'
+'system'
+'tahoma'
+'verdana'
+----------------------------------------
+*/
+/*
+----------------------------------------
+Custom font stacks
+----------------------------------------
+Add custom font stacks to any of the
+type-based fonts. Any USWDS typeface
+token already has a default stack.
+
+Custom stacks don't need to include the
+font's display name. It will
+automatically appear at the start of
+the stack.
+----------------------------------------
+Example:
+$theme-font-type-sans: 'source-sans-pro';
+$theme-font-sans-custom-stack: "Helvetica Neue", Helvetica, Arial, sans;
+
+Output:
+font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans;
+----------------------------------------
+*/
+/*
+----------------------------------------
+Add any custom font source files
+----------------------------------------
+If you want USWDS to generate additional
+@font-face declarations, add your font
+data below, following the example that
+follows.
+----------------------------------------
+USWDS automatically generates @font-face
+decalarations for the following
+
+'merriweather'
+'public-sans'
+'roboto-mono'
+'source-sans-pro'
+
+These typefaces not require custom
+source files.
+----------------------------------------
+EXAMPLE
+
+- dir:
+  Directory relative to $theme-font-path
+- This directory should include fonts saved as
+  .ttf, .woff, and .woff2
+  ExampleSerif-Normal.ttf
+  ExampleSerif-Normal.woff
+  ExampleSerif-Normal.woff2
+
+$theme-font-serif-custom-src: (
+  dir: 'custom/example-serif',
+  roman: (
+    100: false,
+    200: false,
+    300: 'ExampleSerif-Light',
+    400: 'ExampleSerif-Normal',
+    500: false,
+    600: false,
+    700: 'ExampleSerif-Bold',
+    800: false,
+    900: false,
+  ),
+  italic: (
+    100: false,
+    200: false,
+    300: 'ExampleSerif-LightItalic',
+    400: 'ExampleSerif-Italic',
+    500: false,
+    600: false,
+    700: 'ExampleSerif-BoldItalic',
+    800: false,
+    900: false,
+  ),
+);
+----------------------------------------
+*/
+/*
+----------------------------------------
+Role-based font settings
+----------------------------------------
+Set the role-based tokens for your
+project from the following font-type
+tokens.
+----------------------------------------
+'cond'
+'icon'
+'lang'
+'mono'
+'sans'
+'serif'
+----------------------------------------
+*/
+/*
+----------------------------------------
+Type scale
+----------------------------------------
+Define your project's type scale using
+values from the USWDS system type scale
+
+1-20
+----------------------------------------
+*/
+/*
+----------------------------------------
+Font weights
+----------------------------------------
+Assign weights 100-900
+Or use `false` for unneeded weights.
+----------------------------------------
+*/
+/*
+----------------------------------------
+General typography settings
+----------------------------------------
+Type scale tokens
+----------------------------------------
+micro:      10px
+1:          12px
+2:          13px
+3:          14px
+4:          15px
+5:          16px
+6:          17px
+7:          18px
+8:          20px
+9:          22px
+10:         24px
+11:         28px
+12:         32px
+13:         36px
+14:         40px
+15:         48px
+16:         56px
+17:         64px
+18:         80px
+19:         120px
+20:         140px
+----------------------------------------
+Line height tokens
+----------------------------------------
+1:    1
+2:    1.15
+3:    1.35
+4:    1.5
+5:    1.62
+6:    1.75
+----------------------------------------
+Font role tokens
+----------------------------------------
+'ui'
+'heading'
+'body'
+'code'
+'alt'
+----------------------------------------
+Measure (max-width) tokens
+----------------------------------------
+1:       44ex
+2:       60ex
+3:       64ex
+4:       68ex
+5:       74ex
+6:       88ex
+none:    none
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.6.0
+----------------------------------------
+COLOR SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS color tokens in the documentation:
+https://designsystem.digital.gov/design-tokens/color
+----------------------------------------
+*/
+/*
+----------------------------------------
+Theme palette colors
+----------------------------------------
+*/
+/*
+----------------------------------------
+State palette colors
+----------------------------------------
+*/
+/*
+----------------------------------------
+General colors
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.6.0
+----------------------------------------
+SPACING SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS spacing units tokens in the
+documentation:
+https://designsystem.digital.gov/design-tokens/spacing-units
+----------------------------------------
+*/
+/*
+----------------------------------------
+Border radius
+----------------------------------------
+2px           2px
+0.5           4px
+1             8px
+1.5           12px
+2             16px
+2.5           20px
+3             24px
+4             32px
+5             40px
+6             48px
+7             56px
+8             64px
+9             72px
+----------------------------------------
+*/
+/*
+----------------------------------------
+Column gap
+----------------------------------------
+2px         2px
+0.5         4px
+1           8px
+2           16px
+3           24px
+4           32px
+5           40px
+6           48px
+----------------------------------------
+*/
+/*
+----------------------------------------
+Grid container max-width
+----------------------------------------
+mobile
+mobile-lg
+tablet
+tablet-lg
+desktop
+desktop-lg
+widescreen
+----------------------------------------
+*/
+/*
+----------------------------------------
+Site
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.6.0
+----------------------------------------
+UTILITIES SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS utilities in the documentation:
+https://designsystem.digital.gov/utilities
+----------------------------------------
+*/
+/*
+----------------------------------------
+Utility breakpoints
+----------------------------------------
+Which breakpoints does your project
+need? Select as `true` any breakpoint
+used by utilities or layout grid
+----------------------------------------
+*/
+/*
+----------------------------------------
+Global colors
+----------------------------------------
+The following palettes will be added to
+- background-color
+- border-color
+- color
+- text-decoration-color
+----------------------------------------
+*/
+/*
+----------------------------------------
+Settings
+----------------------------------------
+*/
+/*
+----------------------------------------
+Values
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.6.0
+----------------------------------------
+COMPONENT SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS style tokens in the documentation:
+https://designsystem.digital.gov/design-tokens
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.6.0
+----------------------------------------
+GENERAL SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS style tokens in the documentation:
+https://designsystem.digital.gov/design-tokens
+----------------------------------------
+*/
+/*
+----------------------------------------
+Image path
+----------------------------------------
+Relative image file path
+----------------------------------------
+*/
+/*
+----------------------------------------
+Show compile warnings
+----------------------------------------
+Show Sass warnings when functions and
+mixins use non-standard tokens.
+AND
+Show updates and notifications.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Namespace
+----------------------------------------
+*/
+/*
+----------------------------------------
+Layout grid
+----------------------------------------
+Should the layout grid classes output
+with !important
+----------------------------------------
+*/
+/*
+----------------------------------------
+Border box sizing
+----------------------------------------
+When set to true, sets the box-sizing
+property of all site elements to
+`border-box`.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Focus styles
+----------------------------------------
+*/
+/*
+----------------------------------------
+Icons
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.6.0
+----------------------------------------
+TYPOGRAPHY SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS typography tokens in the documentation:
+https://designsystem.digital.gov/design-tokens/typography
+----------------------------------------
+*/
+/*
+----------------------------------------
+Root font size
+----------------------------------------
+Setting $theme-respect-user-font-size to
+true sets the root font size to 100% and
+uses ems for media queries
+----------------------------------------
+$theme-root-font-size only applies when
+$theme-respect-user-font-size is set to
+false.
+
+This will set the root font size
+as a specific px value and use px values
+for media queries.
+
+Accepts true or false
+----------------------------------------
+*/
+/*
+----------------------------------------
+Global styles
+----------------------------------------
+Adds basic styling for the following
+unclassed elements:
+
+- paragraph: paragraph text
+- link: links
+- content: paragraph text, links,
+  headings, lists, and tables
+----------------------------------------
+*/
+/*
+----------------------------------------
+Font path
+----------------------------------------
+Relative font file path
+----------------------------------------
+*/
+/*
+----------------------------------------
+Custom typeface tokens
+----------------------------------------
+Add a new custom typeface token if
+your project uses a typeface not already
+defined by USWDS.
+----------------------------------------
+USWDS defines the following tokens
+by default:
+----------------------------------------
+'georgia'
+'helvetica'
+'merriweather'
+'open-sans'
+'public-sans'
+'roboto-mono'
+'source-sans-pro'
+'system'
+'tahoma'
+'verdana'
+----------------------------------------
+Add as many new tokens as you have
+custom typefaces. Reference your new
+token(s) in the type-based font settings
+using the quoted name of the token.
+
+For example:
+
+$theme-font-type-cond: 'example-font-token';
+
+display-name:
+The display name of your font
+
+cap-height:
+The height of a 500px `N` in Sketch
+----------------------------------------
+You should change `example-[style]-token`
+names to something more descriptive.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Type-based font settings
+----------------------------------------
+Set the type-based tokens for your
+project from the following tokens,
+or from any new font tokens you added in
+$theme-typeface-tokens.
+----------------------------------------
+'georgia'
+'helvetica'
+'merriweather'
+'open-sans'
+'public-sans'
+'roboto-mono'
+'source-sans-pro'
+'system'
+'tahoma'
+'verdana'
+----------------------------------------
+*/
+/*
+----------------------------------------
+Custom font stacks
+----------------------------------------
+Add custom font stacks to any of the
+type-based fonts. Any USWDS typeface
+token already has a default stack.
+
+Custom stacks don't need to include the
+font's display name. It will
+automatically appear at the start of
+the stack.
+----------------------------------------
+Example:
+$theme-font-type-sans: 'source-sans-pro';
+$theme-font-sans-custom-stack: "Helvetica Neue", Helvetica, Arial, sans;
+
+Output:
+font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans;
+----------------------------------------
+*/
+/*
+----------------------------------------
+Add any custom font source files
+----------------------------------------
+If you want USWDS to generate additional
+@font-face declarations, add your font
+data below, following the example that
+follows.
+----------------------------------------
+USWDS automatically generates @font-face
+decalarations for the following
+
+'merriweather'
+'public-sans'
+'roboto-mono'
+'source-sans-pro'
+
+These typefaces not require custom
+source files.
+----------------------------------------
+EXAMPLE
+
+- dir:
+  Directory relative to $theme-font-path
+- This directory should include fonts saved as
+  .ttf, .woff, and .woff2
+  ExampleSerif-Normal.ttf
+  ExampleSerif-Normal.woff
+  ExampleSerif-Normal.woff2
+
+$theme-font-serif-custom-src: (
+  dir: 'custom/example-serif',
+  roman: (
+    100: false,
+    200: false,
+    300: 'ExampleSerif-Light',
+    400: 'ExampleSerif-Normal',
+    500: false,
+    600: false,
+    700: 'ExampleSerif-Bold',
+    800: false,
+    900: false,
+  ),
+  italic: (
+    100: false,
+    200: false,
+    300: 'ExampleSerif-LightItalic',
+    400: 'ExampleSerif-Italic',
+    500: false,
+    600: false,
+    700: 'ExampleSerif-BoldItalic',
+    800: false,
+    900: false,
+  ),
+);
+----------------------------------------
+*/
+/*
+----------------------------------------
+Role-based font settings
+----------------------------------------
+Set the role-based tokens for your
+project from the following font-type
+tokens.
+----------------------------------------
+'cond'
+'icon'
+'lang'
+'mono'
+'sans'
+'serif'
+----------------------------------------
+*/
+/*
+----------------------------------------
+Type scale
+----------------------------------------
+Define your project's type scale using
+values from the USWDS system type scale
+
+1-20
+----------------------------------------
+*/
+/*
+----------------------------------------
+Font weights
+----------------------------------------
+Assign weights 100-900
+Or use `false` for unneeded weights.
+----------------------------------------
+*/
+/*
+----------------------------------------
+General typography settings
+----------------------------------------
+Type scale tokens
+----------------------------------------
+micro:      10px
+1:          12px
+2:          13px
+3:          14px
+4:          15px
+5:          16px
+6:          17px
+7:          18px
+8:          20px
+9:          22px
+10:         24px
+11:         28px
+12:         32px
+13:         36px
+14:         40px
+15:         48px
+16:         56px
+17:         64px
+18:         80px
+19:         120px
+20:         140px
+----------------------------------------
+Line height tokens
+----------------------------------------
+1:    1
+2:    1.15
+3:    1.35
+4:    1.5
+5:    1.62
+6:    1.75
+----------------------------------------
+Font role tokens
+----------------------------------------
+'ui'
+'heading'
+'body'
+'code'
+'alt'
+----------------------------------------
+Measure (max-width) tokens
+----------------------------------------
+1:       44ex
+2:       60ex
+3:       64ex
+4:       68ex
+5:       74ex
+6:       88ex
+none:    none
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.6.0
+----------------------------------------
+COLOR SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS color tokens in the documentation:
+https://designsystem.digital.gov/design-tokens/color
+----------------------------------------
+*/
+/*
+----------------------------------------
+Theme palette colors
+----------------------------------------
+*/
+/*
+----------------------------------------
+State palette colors
+----------------------------------------
+*/
+/*
+----------------------------------------
+General colors
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.6.0
+----------------------------------------
+SPACING SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS spacing units tokens in the
+documentation:
+https://designsystem.digital.gov/design-tokens/spacing-units
+----------------------------------------
+*/
+/*
+----------------------------------------
+Border radius
+----------------------------------------
+2px           2px
+0.5           4px
+1             8px
+1.5           12px
+2             16px
+2.5           20px
+3             24px
+4             32px
+5             40px
+6             48px
+7             56px
+8             64px
+9             72px
+----------------------------------------
+*/
+/*
+----------------------------------------
+Column gap
+----------------------------------------
+2px         2px
+0.5         4px
+1           8px
+2           16px
+3           24px
+4           32px
+5           40px
+6           48px
+----------------------------------------
+*/
+/*
+----------------------------------------
+Grid container max-width
+----------------------------------------
+mobile
+mobile-lg
+tablet
+tablet-lg
+desktop
+desktop-lg
+widescreen
+----------------------------------------
+*/
+/*
+----------------------------------------
+Site
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.6.0
+----------------------------------------
+UTILITIES SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS utilities in the documentation:
+https://designsystem.digital.gov/utilities
+----------------------------------------
+*/
+/*
+----------------------------------------
+Utility breakpoints
+----------------------------------------
+Which breakpoints does your project
+need? Select as `true` any breakpoint
+used by utilities or layout grid
+----------------------------------------
+*/
+/*
+----------------------------------------
+Global colors
+----------------------------------------
+The following palettes will be added to
+- background-color
+- border-color
+- color
+- text-decoration-color
+----------------------------------------
+*/
+/*
+----------------------------------------
+Settings
+----------------------------------------
+*/
+/*
+----------------------------------------
+Values
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.6.0
+----------------------------------------
+COMPONENT SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS style tokens in the documentation:
+https://designsystem.digital.gov/design-tokens
+----------------------------------------
+*/
+/*
+========================================
+Functions
+----------------------------------------
+*/
+/*
+========================================
+General-purpose functions
+----------------------------------------
+*/
+/*
+----------------------------------------
+map-deep-get()
+----------------------------------------
+@author Hugo Giraudel
+@access public
+@param {Map} $map - Map
+@param {Arglist} $keys - Key chain
+@return {*} - Desired value
+----------------------------------------
+*/
+/*
+----------------------------------------
+strip-unit()
+----------------------------------------
+Remove the unit of a length
+@author Hugo Giraudel
+@param {Number} $number - Number to remove unit from
+@return {Number} - Unitless number
+----------------------------------------
+*/
+/*
+----------------------------------------
+multi-cat()
+----------------------------------------
+Concatenate two lists
+----------------------------------------
+*/
+/*
+----------------------------------------
+map-collect()
+----------------------------------------
+Collect multiple maps into a single
+large map
+source: https://gist.github.com/bigglesrocks/d75091700f8f2be5abfe
+----------------------------------------
+*/
+/*
+----------------------------------------
+smart-quote()
+----------------------------------------
+Quotes strings
+Inspects `px`, `xs`, and `xl` numbers
+Leaves bools as is
+----------------------------------------
+*/
+/*
+----------------------------------------
+remove()
+----------------------------------------
+Remove a value from a list
+----------------------------------------
+*/
+/*
+----------------------------------------
+strunquote()
+----------------------------------------
+Unquote a string
+----------------------------------------
+*/
+/*
+----------------------------------------
+to-map()
+----------------------------------------
+Convert a single value to a USWDS
+value map.
+
+Candidate for deprecation if we remove
+isReadable
+----------------------------------------
+*/
+/*
+----------------------------------------
+base-to-map()
+----------------------------------------
+Convert a single base to a USWDS
+value map.
+
+Candidate for deprecation if we remove
+isReadable
+----------------------------------------
+*/
+/*
+----------------------------------------
+ns()
+----------------------------------------
+Add a namesspace of $type if that
+namespace is set to output
+----------------------------------------
+*/
+/*
+----------------------------------------
+de-list()
+----------------------------------------
+Transform a one-element list or arglist
+into that single element.
+----------------------------------------
+(1) => 1
+((1)) => (1)
+----------------------------------------
+*/
+/*
+----------------------------------------
+unpack()
+----------------------------------------
+Create lists of single items from lists
+of lists.
+----------------------------------------
+(1, (2.1, 2.2), 3) -->
+(1, 2.1, 2.2, 3)
+----------------------------------------
+*/
+/*
+----------------------------------------
+get-last()
+----------------------------------------
+Return the last item of a list,
+Return null if the value is null
+----------------------------------------
+*/
+/*
+----------------------------------------
+has-important()
+----------------------------------------
+Check to see if `!important` is
+being passed in a mixin's props
+----------------------------------------
+*/
+/*
+----------------------------------------
+append-important()
+----------------------------------------
+Append `!important` to a list
+----------------------------------------
+*/
+/*
+----------------------------------------
+spacing-multiple()
+----------------------------------------
+Converts a spacing unit multiple into
+the desired final units (currently rem)
+----------------------------------------
+*/
+/*
+----------------------------------------
+rem-to-px()
+----------------------------------------
+Converts a value in rem to a value in px
+----------------------------------------
+*/
+/*
+----------------------------------------
+rem-to-user-em()
+----------------------------------------
+Converts a value in rem to a value in
+[user-settings] em for use in media
+queries
+----------------------------------------
+*/
+/*
+----------------------------------------
+validate-typeface-token()
+----------------------------------------
+Check to see if a typeface-token exists.
+Throw an error if a passed token does
+not exist in the typeface-token map.
+----------------------------------------
+*/
+/*
+----------------------------------------
+cap-height()
+----------------------------------------
+Get the cap height of a valid typeface
+----------------------------------------
+*/
+/*
+----------------------------------------
+px-to-rem()
+----------------------------------------
+Converts a value in px to a value in rem
+----------------------------------------
+*/
+/*
+----------------------------------------
+normalize-type-scale()
+----------------------------------------
+Normalizes a specific face's optical size
+to a set target
+----------------------------------------
+*/
+/*
+----------------------------------------
+utility-font()
+----------------------------------------
+Get a normalized font-size in rem from
+a family and a type size in either
+system scale or project scale
+----------------------------------------
+Not the public-facing function.
+Used for building the utilities and
+withholds certain errors.
+----------------------------------------
+*/
+/*
+----------------------------------------
+line-height()
+lh()
+----------------------------------------
+Get a normalized line-height from
+a family and a line-height scale unit
+----------------------------------------
+*/
+/*
+----------------------------------------
+convert-to-font-type()
+----------------------------------------
+Converts a font-role token into a
+font-type token. Leaves font-type tokens
+unchanged.
+----------------------------------------
+*/
+/*
+----------------------------------------
+get-font-stack()
+----------------------------------------
+Get a font stack from a style- or
+role-based font token.
+----------------------------------------
+*/
+/*
+----------------------------------------
+get-typeface-token()
+----------------------------------------
+Get a typeface token from a font-type or
+font-role token.
+----------------------------------------
+*/
+/*
+----------------------------------------
+get-system-color()
+----------------------------------------
+Derive a system color from its
+family, value, and vivid or a passed
+variable that is, itself, a list
+----------------------------------------
+*/
+/*
+----------------------------------------
+system-type-scale()
+----------------------------------------
+Get a value from the system type scale
+----------------------------------------
+*/
+/*
+----------------------------------------
+calc-gap-offset()
+----------------------------------------
+Calculate a valid uswds unit that is
+half the width of a given unit, for
+calculating gap offset in the layout
+grid.
+----------------------------------------
+*/
+/*
+----------------------------------------
+get-standard-values()
+----------------------------------------
+Gets a map of USWDS standard values
+for a property
+----------------------------------------
+*/
+/*
+----------------------------------------
+number-to-token()
+----------------------------------------
+Converts an integer or numeric value
+into a system value
+
+Ex: 0.5   --> '05'
+    -1px  --> 'neg-1px'
+----------------------------------------
+*/
+/*
+----------------------------------------
+columns()
+----------------------------------------
+outputs a grid-col number based on
+the number of desired columns in the
+12-column grid
+
+Ex: columns(2) --> 6
+    grid-col(columns(2))
+----------------------------------------
+*/
+/*
+----------------------------------------
+get-uswds-value()
+----------------------------------------
+Finds and outputs a value from the
+USWDS standard values.
+
+Used to build other standard utility
+functions and mixins.
+----------------------------------------
+*/
+/*
+----------------------------------------
+color()
+----------------------------------------
+Derive a color from a color shortcode
+----------------------------------------
+*/
+/*
+----------------------------------------
+advanced-color()
+----------------------------------------
+Derive a color from a color triplet:
+[family], [grade], [variant]
+----------------------------------------
+*/
+/*
+----------------------------------------
+units()
+----------------------------------------
+Converts a spacing unit into
+the desired final units (currently rem)
+----------------------------------------
+*/
+/*
+----------------------------------------
+get-palettes()
+----------------------------------------
+Build a single map of plugin values
+from a list of plugin keys.
+----------------------------------------
+*/
+/*
+----------------------------------------
+border-radius()
+----------------------------------------
+Get a border-radius from the system
+border-radii
+----------------------------------------
+*/
+/*
+----------------------------------------
+font-weight()
+fw()
+----------------------------------------
+Get a font-weight value from the
+system font-weight
+----------------------------------------
+*/
+/*
+----------------------------------------
+feature()
+----------------------------------------
+Gets a valid USWDS font feature setting
+----------------------------------------
+*/
+/*
+----------------------------------------
+flex()
+----------------------------------------
+Gets a valid USWDS flex value
+----------------------------------------
+*/
+/*
+----------------------------------------
+font-family()
+family()
+----------------------------------------
+Get a font-family stack from a
+role-based or type-based font family
+----------------------------------------
+*/
+/*
+----------------------------------------
+letter-spacing()
+ls()
+----------------------------------------
+Get a letter-spacing value from the
+system letter-spacing
+----------------------------------------
+*/
+/*
+----------------------------------------
+measure()
+----------------------------------------
+Gets a valid USWDS reading line length
+----------------------------------------
+*/
+/*
+----------------------------------------
+opacity()
+----------------------------------------
+Get an opacity from the system
+opacities
+----------------------------------------
+*/
+/*
+----------------------------------------
+order()
+----------------------------------------
+Get an order value from the
+system orders
+----------------------------------------
+*/
+/*
+----------------------------------------
+radius()
+----------------------------------------
+Get a border-radius value from the
+system letter-spacing
+----------------------------------------
+*/
+/*
+----------------------------------------
+font-size()
+----------------------------------------
+Get type scale value from a [family] and
+[scale]
+----------------------------------------
+*/
+/*
+----------------------------------------
+z-index()
+z()
+----------------------------------------
+Get a z-index value from the
+system z-index
+----------------------------------------
+*/
+/*
+========================================
+core/units
+----------------------------------------
+The master palettes of
+- colors
+- whitespace
+- typescale
+----------------------------------------
+This file is not meant to be modified
+by USWDS project teams. Change your
+project values in
+project/uswds-project-settings
+----------------------------------------
+*/
+/*
+----------------------------------------
+Spacing grid multiplier
+----------------------------------------
+*/
+/*
+----------------------------------------
+Spacing grid
+----------------------------------------
+*/
+/*
+----------------------------------------
+Breakpoints
+----------------------------------------
+*/
+/*
+----------------------------------------
+Units
+----------------------------------------
+*/
+/*
+----------------------------------------
+Layout grid widths
+----------------------------------------
+*/
+/*
+----------------------------------------
+Font stacks
+----------------------------------------
+*/
+/*
+----------------------------------------
+Typeface
+----------------------------------------
+*/
+/*
+----------------------------------------
+Typescale
+----------------------------------------
+*/
+/*
+----------------------------------------
+Measure
+----------------------------------------
+*/
+/*
+----------------------------------------
+Line height
+----------------------------------------
+*/
+/*
+----------------------------------------
+Base cap height
+----------------------------------------
+500px 'N' height measured in Sketch.
+Used for normalizing font sizes.
+Current normalized to Apple system
+fonts.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Colors
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.0 Variables
+Use for computed variables or any
+not meant to be set by system users
+directly.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Touch target size
+----------------------------------------
+*/
+/*
+----------------------------------------
+Namespace
+----------------------------------------
+*/
+/*
+----------------------------------------
+Spacing
+----------------------------------------
+All spacing values that can be called
+by units()
+----------------------------------------
+*/
+/*
+----------------------------------------
+Project fonts
+----------------------------------------
+Collects font settings in a map for
+looping.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Font stack
+----------------------------------------
+Compute the project font stack based on
+the project fonts and the font
+definition values set in
+core/_font-definitions
+----------------------------------------
+*/
+/*
+----------------------------------------
+Cap heights
+----------------------------------------
+Collect project cap heights
+----------------------------------------
+*/
+/*
+----------------------------------------
+Theme color map
+----------------------------------------
+*/
+/*
+----------------------------------------
+Theme color shortcodes
+----------------------------------------
+*/
+/*
+----------------------------------------
+Build the project type scale map
+----------------------------------------
+*/
+/*
+----------------------------------------
+Border-radius
+----------------------------------------
+*/
+/*
+----------------------------------------
+Column gaps
+----------------------------------------
+*/
+/*
+----------------------------------------
+Grid
+----------------------------------------
+*/
+/*
+----------------------------------------
+Aspect Ratios
+----------------------------------------
+*/
+/*
+----------------------------------------
+USWDS Properties
+----------------------------------------
+*/
+/*
+----------------------------------------
+family()
+----------------------------------------
+Get a font-family stack
+----------------------------------------
+*/
+/*
+----------------------------------------
+size()
+----------------------------------------
+Get a normalized font-size in rem from
+a family and a type size in either
+system scale or project scale
+----------------------------------------
+*/
+/*
+----------------------------------------
+font()
+----------------------------------------
+Get a font-family stack
+AND
+Get a normalized font-size in rem from
+a family and a type size in either
+system scale or project scale
+----------------------------------------
+*/
+/*
+----------------------------------------
+typeset()
+----------------------------------------
+Sets:
+- family
+- size
+- line-height
+----------------------------------------
+*/
+/* stylelint-disable max-nesting-depth */
+/*
+----------------------------------------
+@render-pseudoclass
+----------------------------------------
+Build a pseucoclass utiliy from values
+calculated in the @render-utilities-in
+loop
+----------------------------------------
+*/
+/*
+----------------------------------------
+@render-utility
+----------------------------------------
+Build a utility from values calculated
+in the @render-utilities-in loop
+----------------------------------------
+TODO: Determine the proper use of
+unquote() in the following. Changed to
+account for a 'interpolation near
+operators will be simplified in a
+future version of Sass' warning.
+----------------------------------------
+*/
+/*
+----------------------------------------
+@render-utilities-in
+----------------------------------------
+The master loop that sets the building
+blocks of utilities from the values
+in individual rule settings and loops
+through all possible variants
+----------------------------------------
+*/
+/* stylelint-enable */
+/*  deprecated.scss
+    ---
+    Occasionally the design system will deprecate
+    old variables or functionality. If we replace
+    the old functionality with something new, this is a
+    place to connect the old functionality to the
+    new functionality, in the service of better
+    continuity and backwards compatibility within a
+    major release cycle.
+
+    Note the USWDS version where we deprecated the
+    old functionality in a comment.
+
+    Be sure to update notifications.scss.
+
+    This file should started fresh at each
+    major version.
+*/
+/*  notifications.scss
+    ---
+    Adds a notification at the top of each USWDS
+    compile. Use this file for important notifications
+    and updates to the design system.
+
+    This file should started fresh at each
+    major version.
+
+*/
+/* prettier-ignore */
+/* prettier-ignore */
+.usa-grid-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 64rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media all and (min-width: 64em) {
+  .usa-grid-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.usa-grid-row {
+  display: -webkit-box  !important;
+  display: -ms-flexbox  !important;
+  display: flex  !important;
+  -ms-flex-wrap: wrap  !important;
+  flex-wrap: wrap  !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+@media all and (min-width: 40em) {
+  .usa-grid-row {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .usa-grid-row > * {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.usa-grid-col {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+  width: 100%;
+}
+@media all and (min-width: 40em) {
+  .usa-grid-col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+.default-container {
+  background-color: #fcfcfc;
+}
+
+html,
+body {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1.6;
+  height: auto;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.usa-center {
+  text-align: center;
+}
+
+.usa-prose site-prose {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.sticky::before, .sticky::after {
+  content: "";
+  display: table;
+}
+
+.site-header {
+  background-color: #252f3e;
+}
+@media all and (min-width: 64em) {
+  .site-header {
+    border-bottom: none;
+  }
+}
+.site-header .site-logo {
+  margin-left: 1rem;
+}
+@media all and (min-width: 64em) {
+  .site-header .site-logo {
+    display: initial;
+    float: left;
+    margin-bottom: 0;
+    margin-left: 2rem;
+  }
+}
+@media all and (min-width: 64em) {
+  .site-header .site-logo .usa-logo__text {
+    display: initial;
+    letter-spacing: -0.01em;
+  }
+}
+.site-header .usa-button-list {
+  display: none;
+  margin-top: -0.25rem;
+}
+@media all and (min-width: 64em) {
+  .site-header .usa-button-list {
+    float: right;
+    line-height: 5rem;
+    margin-top: 0;
+    display: block;
+    padding-right: 2rem;
+  }
+}
+.site-header .usa-button-list li {
+  display: inline;
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+.site-header .usa-button-list li:last-child .usa-button {
+  margin-right: 0;
+}
+.site-header .usa-button-list .usa-button {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+@media all and (min-width: 64em) {
+  .navbar__search .usa-input {
+    background-color: #13171f;
+    color: white;
+    height: 39px;
+  }
+}
+@media all and (min-width: 64em) {
+  .navbar__search .usa-button {
+    height: 39px;
+  }
+}
+
+.site-banner {
+  background-color: #1b1b1b;
+}
+.site-banner .usa-banner__inner {
+  max-width: 100%;
+}
+.site-banner .usa-banner__content {
+  color: white;
+  margin-left: 0;
+}
+.site-banner .usa-banner__button {
+  color: #adadad;
+}
+.site-banner .usa-banner__button:hover {
+  color: white;
+}
+.site-banner .usa-banner__header-text {
+  color: white;
+}
+.site-banner .usa-banner__header-action {
+  color: #adadad;
+}
+
+.site-header-navbar {
+  background-color: white;
+  border-bottom: none !important;
+}
+@media all and (min-width: 64em) {
+  .site-header-navbar {
+    height: 5rem;
+    width: 100%;
+    display: block;
+  }
+}
+@-moz-document url-prefix() {
+  @media all and (min-width: 64em) {
+    .site-header-navbar {
+      padding-top: 1px;
+    }
+  }
+}
+
+.sidenav-mobile .usa-button.usa-button--outline-inverse {
+  -webkit-box-shadow: inset 0 0 0 2px #4a77b4;
+  box-shadow: inset 0 0 0 2px #4a77b4;
+  color: #4a77b4;
+}
+.sidenav-mobile .usa-button.usa-button--outline-inverse:hover {
+  -webkit-box-shadow: inset 0 0 0 "px" #2f4668;
+  box-shadow: inset 0 0 0 "px" #2f4668;
+  color: #2f4668;
+}
+@media all and (min-width: 64em) {
+  .sidenav-mobile {
+    display: none;
+  }
+}
+.sidenav-mobile .usa-button-list {
+  margin-top: 2rem;
+}
+.sidenav-mobile .usa-button {
+  margin-top: 0.5rem;
+}
+
+@media all and (min-width: 64em) {
+  .site-logo {
+    margin-top: 2px;
+  }
+}
+.site-logo a {
+  color: rgba(0, 0, 0, 0.8);
+}
+.site-logo .usa-logo__text {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.94rem;
+  line-height: 2.5rem;
+}
+.site-logo .usa-logo__text::before {
+  height: 2.4rem;
+  width: 9rem;
+  content: "";
+  background-image: url("../img/lab-logos/Logo_2017_color_RGB-01.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: inline-block;
+  margin-left: -2px;
+  margin-right: 0.25rem;
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+}
+@media all and (min-width: 64em) {
+  .site-logo .usa-logo__text::before {
+    height: 2.4rem;
+    width: 9rem;
+  }
+}
+@media all and (min-width: 64em) {
+  .site-logo .usa-logo__text {
+    font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 1.25rem;
+    line-height: 1;
+    line-height: 4.5rem;
+  }
+}
+
+.site-nav-secondary {
+  display: none;
+}
+@media all and (min-width: 64em) {
+  .site-nav-secondary {
+    background-color: white;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    clear: both;
+    display: block;
+    height: 3rem;
+    padding-left: 1rem;
+    z-index: 100;
+  }
+}
+.site-nav-secondary.sticky {
+  z-index: 200;
+}
+.site-nav-secondary ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+.site-nav-secondary ul > li {
+  margin-bottom: 0;
+  max-width: unset;
+}
+.site-nav-secondary ul li {
+  display: inline;
+}
+.site-nav-secondary a {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.94rem;
+  line-height: 1;
+  color: #757575;
+  display: inline-block;
+  font-weight: normal;
+  height: 3rem;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+}
+.page-home .site-nav-secondary a {
+  color: #1b1b1b;
+}
+.site-nav-secondary a:hover {
+  position: relative;
+  color: #2672de;
+}
+.site-nav-secondary a:hover::after {
+  background-color: #2672de;
+  border-radius: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.25rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0;
+}
+.site-nav-secondary .usa-current {
+  position: relative;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+.site-nav-secondary .usa-current::after {
+  background-color: #2672de;
+  border-radius: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.25rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0;
+}
+.site-nav-secondary .usa-current:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.site-sidenav.usa-sidenav {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.94rem;
+  line-height: 1.4;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  padding: 0;
+}
+.site-sidenav.usa-sidenav a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #2e2e2e;
+}
+.site-sidenav.usa-sidenav a:hover {
+  background-color: transparent;
+  color: #2672de;
+}
+.site-sidenav.usa-sidenav .usa-current {
+  color: #2e2e2e;
+  position: static;
+}
+.site-sidenav.usa-sidenav .usa-current::after {
+  border-radius: 0;
+  bottom: 0;
+  background-color: #2672de;
+  bottom: -1px;
+  left: -2px;
+  top: 0;
+  z-index: 100;
+}
+.site-sidenav.usa-sidenav .usa-sidenav__item:first-child .usa-current::after {
+  border-top-left-radius: 0.25rem;
+  top: -2px;
+}
+.site-sidenav.usa-sidenav .usa-sidenav__item:last-child .usa-current::after {
+  border-bottom-left-radius: 0.25rem;
+  bottom: -2px;
+}
+.site-sidenav.usa-sidenav .usa-sidenav__item {
+  border-top: none;
+  line-height: 1.4;
+  position: relative;
+}
+.site-sidenav.usa-sidenav .usa-sidenav__item + .usa-sidenav__item a {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.site-sidenav.usa-sidenav .usa-sidenav__item.is-current {
+  background-color: #fcfcfc;
+}
+.site-sidenav.usa-sidenav .usa-sidenav__item.is-current .is-current {
+  background-color: transparent;
+}
+.site-sidenav.usa-sidenav .usa-sidenav__sublist {
+  font-size: 0.81rem;
+}
+.site-sidenav.usa-sidenav .usa-sidenav__sublist a {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-left: 1rem;
+}
+.site-sidenav.usa-sidenav .usa-sidenav__sublist .usa-current {
+  color: #2672de;
+}
+.site-sidenav.usa-sidenav .usa-sidenav__sublist .usa-sidenav__sublist a {
+  padding-left: 2rem;
+}
+
+.sidenav {
+  display: none;
+}
+@media all and (min-width: 64em) {
+  .sidenav {
+    display: block;
+    float: left;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    padding-right: 0;
+    padding-left: 2rem;
+    width: 15rem;
+  }
+}
+.sidenav .usa-navigation-submenu[aria-hidden=false] {
+  display: block;
+}
+
+.main-content {
+  position: absolute;
+  right: 0;
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  margin-top: 2.5rem;
+  position: relative;
+  width: 100%;
+}
+@media all and (min-width: 64em) {
+  .main-content {
+    width: calc(100% - 15rem);
+  }
+}
+.lt-ie9 .main-content {
+  width: 75%;
+}
+
+#main-content .usa-accordion__button {
+  line-height: 1;
+}
+
+.site-h2, .styleguide-content > h2 {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 2rem;
+}
+.site-h2 + p, .styleguide-content > h2 + p {
+  margin-top: 0.75rem;
+}
+
+.styleguide-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 3rem;
+  max-width: 64rem;
+  overflow: hidden;
+  position: relative;
+}
+@media all and (min-width: 64em) {
+  .styleguide-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+.styleguide-content header > h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.styleguide-content header + p {
+  margin-top: 0.75rem;
+}
+.styleguide-content > h3 {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1.06rem;
+  line-height: 1.4;
+}
+.styleguide-content > h3 + p {
+  margin-top: 0.5rem;
+}
+.styleguide-content > h4 {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  margin-top: 1.5rem;
+}
+.styleguide-content > h4 + p, .styleguide-content > h4 + ol, .styleguide-content > h4 + ul {
+  margin-top: 0.5rem;
+}
+.styleguide-content > h5 {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.styleguide-content > h5 + p, .styleguide-content > h5 + ol, .styleguide-content > h5 + ul {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.product-roadmap-list li {
+  max-width: 100%;
+}
+
+.label-recommended,
+.label-done, .label-upcoming, .label-beta,
+.label-next, .label-alpha,
+.label-in-progress {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #1b1b1b;
+  font-weight: bold;
+  margin-left: 0.75rem;
+  position: absolute;
+  text-decoration: none;
+}
+[href^=http].label-recommended:not([href*=".gov"])::after,
+[href^=http].label-done:not([href*=".gov"])::after, [href^=http].label-upcoming:not([href*=".gov"])::after, [href^=http].label-beta:not([href*=".gov"])::after,
+[href^=http].label-next:not([href*=".gov"])::after, [href^=http].label-alpha:not([href*=".gov"])::after,
+[href^=http].label-in-progress:not([href*=".gov"])::after {
+  display: none;
+}
+
+.label-alpha,
+.label-in-progress {
+  background-color: #ffbe2e;
+}
+
+.label-beta,
+.label-next {
+  background-color: #0050d8;
+  color: white;
+}
+
+.label-upcoming {
+  letter-spacing: 0.025em;
+  font-weight: normal;
+  border-color: #adadad;
+  border-width: 1px;
+  border-style: solid;
+  color: #5c5c5c;
+  background-color: transparent;
+}
+
+.label-recommended,
+.label-done {
+  background-color: #ecf3ec;
+}
+
+.heading-margin-alt {
+  margin-top: 3.5rem;
+}
+
+.site-subheading {
+  margin-bottom: 0;
+  margin-top: 0;
+  clear: both;
+  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 0.87rem;
+  line-height: 1.1;
+  font-weight: normal;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.81rem;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.025em;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+* + .site-subheading {
+  margin-top: 1.5em;
+}
+.site-subheading + * {
+  margin-top: 1em;
+}
+
+.cta img {
+  height: 1rem;
+  margin-right: 0.25rem;
+  position: relative;
+  top: 2px;
+  vertical-align: baseline;
+}
+
+.site-footer {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1.6;
+  clear: both;
+}
+.site-footer h3 {
+  margin-top: 0;
+}
+.site-footer .logo-links {
+  margin-bottom: 0.5rem;
+  margin-right: 1.25rem;
+}
+@media all and (min-width: 40em) {
+  .site-footer .logo-links {
+    float: left;
+    margin-bottom: 0;
+  }
+}
+.site-footer .logo-links img {
+  width: 6remw;
+}
+.site-footer .logo-links a {
+  display: inline-block;
+  line-height: 0;
+}
+.site-footer .usa-footer__secondary-section {
+  padding-bottom: 0;
+  padding-top: 1rem;
+  background-color: #f0f0f0;
+}
+@media all and (min-width: 40em) {
+  .site-footer .usa-footer__secondary-section {
+    padding-top: 2rem;
+  }
+}
+
+.footer-main-img {
+  display: none;
+  max-width: 10rem;
+}
+@media all and (min-width: 40em) {
+  .footer-main-img {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.footer-content {
+  margin-bottom: 2.5rem;
+}
+.footer-content h3 {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin: 0;
+}
+.footer-content p {
+  max-width: 72ex;
+}
+
+.footer-contact-links {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+.footer-contact-links > * {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.footer-contact-links h4,
+.footer-contact-links a {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.88rem;
+}
+.footer-contact-links h4 {
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+.footer-contact-links a {
+  color: #2f4668;
+  text-decoration: underline;
+}
+.footer-contact-links img {
+  width: 2.5rem;
+}
+.footer-contact-links .usa-media-block {
+  clear: both;
+  line-height: 1.4;
+  margin-top: 1.25rem;
+}
+@media all and (min-width: 40em) {
+  .footer-contact-links .usa-media-block {
+    margin-top: 0;
+  }
+}
+@media all and (min-width: 40em) {
+  .footer-contact-links {
+    margin-top: 2rem;
+  }
+}
+
+.footer-section-bottom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #252f3e;
+}
+.footer-section-bottom p {
+  color: white;
+  font-size: 0.88rem;
+  max-width: none;
+  overflow: hidden;
+}
+@media all and (min-width: 40em) {
+  .footer-section-bottom p:first-of-type, .footer-section-bottom p:last-of-type {
+    margin: 0;
+  }
+}
+.footer-section-bottom a {
+  color: #adadad;
+}
+.footer-section-bottom a:hover {
+  color: white;
+}
+
+.preview {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #f0f0f0;
+}
+.preview::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.preview .usa-dark-background {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: inline-block;
+}
+.preview > *:first-child {
+  margin-top: 0;
+}
+
+.preview-no_border {
+  border: 0;
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+  padding: 0;
+}
+
+.preview-lists .usa-heading-alt {
+  margin-top: 0;
+}
+
+.preview-dropdown {
+  padding-top: 0;
+}
+
+.page-grids .preview {
+  border: 0;
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+  padding: 0;
+}
+.page-grids .preview > *:first-child {
+  margin-top: 1rem;
+}
+
+.grid-example .usa-grid {
+  background: #f0f0f0;
+}
+.grid-example .usa-grid > * {
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  color: white;
+  padding: 0.5rem;
+  background: #757575;
+}
+@media all and (min-width: 40em) {
+  .grid-example .usa-width-one-twelfth {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.grid-example-blank .usa-grid {
+  text-align: center;
+}
+
+.grid-text .usa-grid {
+  background: #757575;
+}
+.grid-text .usa-grid > * {
+  background: #f0f0f0;
+  color: black;
+}
+.grid-text .usa-grid h3 {
+  margin-top: 0;
+}
+.grid-text .usa-grid p {
+  margin-bottom: 0;
+}
+
+h3 + .button_wrapper {
+  margin-top: -0.25rem;
+}
+
+.button_wrapper {
+  clear: both;
+  display: block;
+  margin-left: -0.5rem;
+  padding: 0 0.5rem;
+}
+@media all and (min-width: 30em) {
+  .button_wrapper {
+    display: table;
+  }
+}
+.button_wrapper button:last-child {
+  margin-right: 0;
+}
+
+.button_wrapper-dark {
+  background: #2e2e2e;
+}
+
+.usa-heading {
+  color: #2f4668;
+}
+
+.usa-color-primary {
+  background-color: #4a77b4;
+}
+
+.usa-color-primary-darker {
+  background-color: #2f4668;
+}
+
+.usa-color-primary-darkest {
+  background-color: #252f3e;
+}
+
+.usa-color-base {
+  background-color: #1b1b1b;
+}
+
+.usa-color-gray-dark {
+  background-color: #2e2e2e;
+}
+
+.usa-color-gray-light {
+  background-color: #adadad;
+}
+
+.usa-color-white {
+  background-color: white;
+  -webkit-box-shadow: inset 0 0 0 1px #565c65;
+  box-shadow: inset 0 0 0 1px #565c65;
+}
+
+.usa-color-primary-alt {
+  background-color: #00bde3;
+}
+
+.usa-color-primary-alt-dark {
+  background-color: #28a0cb;
+}
+
+.usa-color-primary-alt-darkest {
+  background-color: #07648d;
+}
+
+.usa-color-primary-alt-light {
+  background-color: #97d4ea;
+}
+
+.usa-color-primary-alt-lightest {
+  background-color: #e1f3f8;
+}
+
+.usa-color-secondary {
+  background-color: #d83933;
+}
+
+.usa-color-secondary-dark {
+  background-color: #b50909;
+}
+
+.usa-color-secondary-darkest {
+  background-color: #8b0a03;
+}
+
+.usa-color-secondary-light {
+  background-color: #f2938c;
+}
+
+.usa-color-secondary-lightest {
+  background-color: #f3e1e4;
+}
+
+.usa-color-gray {
+  background-color: #565c65;
+}
+
+.usa-color-gray-lighter {
+  background-color: #dfe1e2;
+}
+
+.usa-color-gray-lightest {
+  background-color: #edeff0;
+}
+
+.usa-color-gray-warm-dark {
+  background-color: #454540;
+}
+
+.usa-color-gray-warm-light {
+  background-color: #e6e6e2;
+}
+
+.usa-color-gray-cool-light {
+  background-color: #ecf1f7;
+}
+
+.usa-color-gold {
+  background-color: #ffbe2e;
+}
+
+.usa-color-gold-light {
+  background-color: #ffe396;
+}
+
+.usa-color-gold-lighter {
+  background-color: #f5e6af;
+}
+
+.usa-color-gold-lightest {
+  background-color: #fef0c8;
+}
+
+.usa-color-green {
+  background-color: #4d8055;
+}
+
+.usa-color-green-light {
+  background-color: #5e9f69;
+}
+
+.usa-color-green-lighter {
+  background-color: #b4d0b9;
+}
+
+.usa-color-green-lightest {
+  background-color: #ecf3ec;
+}
+
+.usa-color-cool-blue {
+  background-color: #0b4778;
+}
+
+.usa-color-cool-blue-light {
+  background-color: #4a77b4;
+}
+
+.usa-color-cool-blue-lighter {
+  background-color: #98afd2;
+}
+
+.usa-color-cool-blue-lightest {
+  background-color: #e1e7f1;
+}
+
+.usa-color-focus {
+  background-color: #2491ff;
+}
+
+.usa-color-visited {
+  background-color: #54278f;
+}
+
+.usa-color-text-primary-darkest {
+  color: #252f3e;
+}
+
+.usa-color-text-primary-darker {
+  color: #2f4668;
+}
+
+.usa-color-text-primary {
+  color: #4a77b4;
+}
+
+.usa-color-text-cool-blue-light {
+  color: #4a77b4;
+}
+
+.usa-color-text-primary-alt-darkest {
+  color: #07648d;
+}
+
+.usa-color-text-green {
+  color: #4d8055;
+}
+
+.usa-color-text-visited {
+  color: #54278f;
+}
+
+.usa-color-text-gray-dark {
+  color: #2d2e2f;
+}
+
+.usa-color-text-gray {
+  color: #565c65;
+}
+
+.usa-color-text-gray-warm-dark {
+  color: #454540;
+}
+
+.usa-color-text-secondary-darkest {
+  color: #8b0a03;
+}
+
+.usa-color-text-secondary-dark {
+  color: #b50909;
+}
+
+.usa-color-text-secondary {
+  color: #d83933;
+}
+
+.usa-color-text-white {
+  color: white;
+}
+
+.usa-heading-alt {
+  border-bottom: 1px solid #565c65;
+  padding-bottom: 0.5rem;
+}
+
+.usa-typography-example-font {
+  padding-top: 0.5rem;
+}
+.usa-typography-example-font h1,
+.usa-typography-example-font h2,
+.usa-typography-example-font h3,
+.usa-typography-example-font h4,
+.usa-typography-example-font h5,
+.usa-typography-example-font h6,
+.usa-typography-example-font .usa-font-example p {
+  margin: 0;
+}
+
+@media all and (min-width: 40em) {
+  .font-example-paragraph {
+    max-width: 15rem;
+    width: 100%;
+  }
+}
+
+.usa-typography-example .usa-monospace {
+  font-size: 0.77rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.usa-monospace {
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+}
+
+code,
+pre {
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  font-size: 0.77rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-weight: normal;
+}
+
+pre {
+  padding: 1rem;
+}
+pre code {
+  padding: 0;
+  background-color: transparent;
+}
+pre code::before, pre code::after {
+  display: none;
+}
+pre.lineno {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a.token {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  font-size: 0.77rem;
+  text-decoration: none;
+  background-color: #e1e7f1;
+  border: 1px solid #e1e7f1;
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  line-height: 1;
+}
+a.token:visited {
+  color: rgba(0, 0, 0, 0.8);
+}
+a.token:hover, a.token:hover:visited {
+  background-color: #2672de;
+  border-color: #2672de;
+  color: white;
+}
+a.token:active, a.token:active:visited {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+code {
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+code::before, code::after {
+  letter-spacing: -0.03em;
+  content: " ";
+}
+
+.site-accordion-code {
+  margin-bottom: 0.5rem;
+}
+.site-accordion-code pre,
+.site-accordion-code code {
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  font-size: 0.83rem;
+  line-height: 1.6;
+  background: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+.site-accordion-code .usa-unstyled-list {
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+.site-accordion-code .usa-unstyled-list > li {
+  margin-bottom: 0;
+  max-width: unset;
+}
+
+[class*=language-] {
+  color: #1b1b1b;
+}
+[class*=language-] .nt,
+[class*=language-] .token.property,
+[class*=language-] .token.tag,
+[class*=language-] .token.boolean,
+[class*=language-] .token.number,
+[class*=language-] .token.constant,
+[class*=language-] .token.symbol,
+[class*=language-] .token.deleted {
+  color: #07648d;
+}
+[class*=language-] .na,
+[class*=language-] .token.selector,
+[class*=language-] .token.attr-name,
+[class*=language-] .token.string,
+[class*=language-] .token.char,
+[class*=language-] .token.builtin,
+[class*=language-] .token.inserted {
+  color: #d83933;
+}
+[class*=language-] .s,
+[class*=language-] .token.atrule,
+[class*=language-] .token.attr-value,
+[class*=language-] .token.keyword {
+  color: #4d8055;
+}
+[class*=language-] .token.punctuation {
+  color: #07648d;
+}
+[class*=language-] .c {
+  color: #565c65;
+}
+
+.alignment-example {
+  border-left: 2px solid #2f4668;
+  padding-left: 0.5rem;
+}
+
+.help-text {
+  border-top: 2px solid #2f4668;
+  color: #2f4668;
+  font-size: 16px;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+.text-tiny {
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+}
+.text-tiny:first-child {
+  margin-top: 0;
+}
+
+.typography-sans-intro .text-huge {
+  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 9.32rem;
+  line-height: 0.9;
+}
+.typography-sans-intro .text-tiny {
+  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 0.93rem;
+  line-height: 0.9;
+}
+
+.typography-serif-intro .text-huge {
+  font-family: Merriweather Web, Georgia, Cambria, Times New Roman, Times, serif;
+  font-size: 8.54rem;
+  line-height: 1;
+}
+.typography-serif-intro .text-tiny {
+  font-family: Merriweather Web, Georgia, Cambria, Times New Roman, Times, serif;
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.typography-lang-intro .text-huge {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 8.75rem;
+  line-height: 1;
+}
+.typography-lang-intro .text-tiny {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.88rem;
+  line-height: 1;
+}
+
+.typography-mono-intro .text-huge {
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  font-size: 8.34rem;
+  line-height: 1;
+}
+.typography-mono-intro .text-tiny {
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  font-size: 0.83rem;
+  line-height: 1;
+}
+
+.serif-robust .usa-display-alt {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.serif-robust .usa-font-lead {
+  font-weight: 300;
+}
+.serif-robust .usa-font-lead .usa-font-lead-alt {
+  font-size: 0.94rem;
+  font-weight: normal;
+}
+.serif-robust.serif-body .usa-font-example p {
+  font-family: Merriweather Web, Georgia, Cambria, Times New Roman, Times, serif;
+  font-size: 0.91rem;
+  line-height: 1.4;
+}
+.serif-robust.serif-body .usa-font-example .usa-font-lead {
+  font-size: 1.25rem;
+}
+.serif-robust.serif-body .usa-font-example .usa-font-lead .usa-font-lead-alt {
+  font-size: 0.94rem;
+  font-weight: normal;
+}
+
+.sans-style h1,
+.sans-style h2,
+.sans-style h3,
+.sans-style h4,
+.sans-style h5,
+.sans-style h6 {
+  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+.sans-style h1 {
+  font-size: 3.19rem;
+}
+.sans-style h2 {
+  font-size: 2.4rem;
+}
+.sans-style h3 {
+  font-size: 1.86rem;
+}
+.sans-style h4 {
+  font-size: 1.33rem;
+}
+.sans-style h5 {
+  font-size: 1.13rem;
+}
+.sans-style h6 {
+  font-size: 0.93rem;
+}
+.sans-style .usa-display {
+  font-size: 3.73rem;
+}
+.sans-style .usa-display-alt {
+  font-size: 3.19rem;
+  font-weight: 300;
+}
+.sans-style .usa-font-lead {
+  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.sans-style.serif-body .usa-font-example p {
+  font-family: Merriweather Web, Georgia, Cambria, Times New Roman, Times, serif;
+  font-size: 0.98rem;
+  line-height: 1.4;
+}
+.sans-style.serif-body .usa-font-example .usa-font-lead {
+  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.33rem;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.serif-sans-minor h6 {
+  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+
+.site-accordion-docs {
+  margin-bottom: 3.5rem;
+}
+
+[href^=http]:not([href*=".gov"])::after {
+  background-image: url("../img/external-link.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+  display: inline-block;
+  height: 0.65em;
+  margin-bottom: -1px;
+  margin-left: 0.25rem;
+  width: 0.65em;
+}
+[href^=http]:not([href*=".gov"]):hover::after {
+  background-image: url("../img/external-link-hover.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../img/external-link-hover.svg"), linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+
+.usa-button[href^=http]:not([href*=".gov"])::after,
+.link-download[href^=http]:not([href*=".gov"])::after,
+.media_link[href^=http]:not([href*=".gov"])::after {
+  display: none;
+}
+
+.logo-links [href^=http]:not([href*=".gov"])::after,
+.usa-disclaimer-stage [href^=http]:not([href*=".gov"])::after {
+  display: none;
+}
+
+.page-home .usa-graphic-list .usa-media-block__body > *:first-child {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1.06rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.page-home .usa-graphic-list .usa-media-block__body > p {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.94rem;
+  margin: 0.25rem 0;
+}
+.page-home .usa-graphic-list .usa-media-block__img {
+  margin-bottom: 0.5rem;
+  margin-right: 1.25rem;
+  max-width: 4.5rem;
+}
+@media all and (min-width: 64em) {
+  .page-home .usa-graphic-list .usa-media-block__img {
+    float: none;
+  }
+}
+@media screen and (max-width: 64rem) and (min-width: 40rem) {
+  .page-home .usa-graphic-list .usa-graphic-list__row .usa-media-block:nth-child(-n+2) {
+    margin-bottom: 4rem;
+  }
+}
+.page-home .usa-footer__secondary-section {
+  background-color: #e6e6e6;
+}
+
+@media all and (min-width: 55em) {
+  .hero {
+    background-image: url("../../img/home/hero.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 2.5rem center;
+  }
+}
+
+.hero--heading {
+  font-size: 1.75rem;
+}
+@media all and (min-width: 40em) {
+  .hero--heading {
+    font-size: 2.5rem;
+  }
+}
+
+.hero--content {
+  font-size: 1.25rem;
+}
+
+.showcase img {
+  -webkit-box-shadow: 0 1px 0.25rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 0.25rem 0 rgba(0, 0, 0, 0.1);
+}
+.showcase a {
+  display: inline-block;
+  font-size: 1.06rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+@media all and (min-width: 40em) {
+  .showcase a {
+    margin-bottom: 0;
+  }
+}
+
+.font-display {
+  font-size: 3rem;
+}
+
+.homepage-rule {
+  margin-bottom: 0;
+  margin-top: 0;
+  border: 0;
+  height: 1rem;
+  width: 100%;
+  position: relative;
+}
+.homepage-rule.center-diamond {
+  background: none;
+  text-align: center;
+}
+.homepage-rule.center-diamond::before {
+  content: " ";
+  display: inline-block;
+  background: #4a77b4;
+  height: 1px;
+  position: relative;
+  top: 0.5rem;
+  width: 100%;
+}
+.homepage-rule.center-diamond::after {
+  content: "◆";
+  display: inline-block;
+  position: relative;
+  top: -2rem;
+  font-size: 1.125rem;
+  padding: 0 0.5rem;
+  color: #d83933;
+  background: #fcfcfc;
+}
+
+.page-ui-components .usa-font-lead:first-of-type {
+  margin-top: 2rem;
+}
+
+@media all and (min-width: 40em) {
+  .page-design-principles .main-content .usa-grid-full {
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+  }
+}
+.page-design-principles img {
+  max-width: 10rem;
+}
+
+.link-download {
+  display: table;
+}
+.link-download::before {
+  height: 0.75rem;
+  width: 0.75rem;
+  background: url("../img/icon-download.png") no-repeat 0 0;
+  background: url("../img/icon-download.svg") no-repeat 0 0;
+  background-size: 100%;
+  content: "";
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 0.75rem;
+}
+
+.link-download-subtext {
+  margin-left: 1.5rem;
+}
+
+.link_group-download .link-download {
+  margin-bottom: 0.5rem;
+}
+
+.page-product-roadmap .usa-content > ul:not(.usa-content-list),
+.page-for-developers .usa-content > ul:not(.usa-content-list),
+.page-for-designers .usa-content > ul:not(.usa-content-list),
+.page-component-maturity-scale .usa-content > ul:not(.usa-content-list) {
+  max-width: 64ex;
+}
+
+.page-product-roadmap .main-content .usa-tag {
+  display: inline-block;
+  position: relative;
+}
+
+.docs-grid-example {
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  font-size: 0.89rem;
+}
+.docs-grid-example .grid-row {
+  margin-top: 0.5rem;
+}
+.docs-grid-example [class*=grid-col] {
+  background-color: #e1e7f1;
+  text-align: center;
+}
+.docs-grid-example .grid-row:not([class*=grid-gap]) [class*=grid-col] {
+  border: 1px solid;
+  padding: 1rem;
+}
+.docs-grid-example [class*=grid-gap] [class*=grid-col] > * {
+  background-color: white;
+  border: 1px solid;
+  padding: 1rem;
+}
+
+.page-header .preview img,
+.page-page-templates .preview img {
+  -webkit-box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.layout-demo {
+  margin-bottom: 5rem;
+}
+@media all and (min-width: 40em) {
+  .layout-demo {
+    margin-bottom: 4rem;
+  }
+}
+
+.demo-footer {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  background-color: #2d2e2f;
+  -webkit-box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+.demo-footer .usa-button {
+  background-image: url("../../img/angle-arrow-left-inverse.png");
+  background-image: url("../../img/angle-arrow-left-inverse.svg");
+  background-repeat: no-repeat;
+  background-position: left 1.25rem center;
+  background-size: 0.5rem;
+  padding-left: 2rem;
+}
+@media all and (min-width: 40em) {
+  .demo-footer .usa-button {
+    margin-right: 1rem;
+    margin-top: 0;
+  }
+}
+
+.demo-footer-title {
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  color: white;
+  display: inline-block;
+}
+@media all and (min-width: 40em) {
+  .demo-footer-title {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.demo-footer-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media all and (min-width: 64em) {
+  .demo-footer-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+hr {
+  background: #dfe1e2;
+  border: none;
+  height: 1px;
+  margin: 2rem 0;
+}
+
+iframe {
+  margin-bottom: 2rem;
+}
+
+.post-excerpt {
+  margin-top: 2.5rem;
+}
+.post-excerpt .post-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.post-excerpt .post-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.post-excerpt .post-title a:hover {
+  color: #4a77b4;
+  text-decoration: underline;
+}
+.post-excerpt .post-category {
+  margin-top: 0;
+}
+.post-excerpt .post-category + .post-title {
+  margin-top: 0;
+}
+.post-excerpt .post-content p {
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+}
+
+.post-date {
+  display: block;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.post-title {
+  margin-bottom: 0;
+  margin-top: 0;
+  clear: both;
+  font-family: Merriweather Web, Georgia, Cambria, Times New Roman, Times, serif;
+  font-size: 1.71rem;
+  line-height: 1.2;
+  font-weight: bold;
+  max-width: 44ex;
+}
+* + .post-title {
+  margin-top: 1.5em;
+}
+.post-title + * {
+  margin-top: 1em;
+}
+
+.is-inverse {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-content h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.4;
+}
+@media all and (min-width: 55em) {
+  .page-content h3 {
+    font-size: 3rem;
+  }
+}
+
+.docs-text {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1.06rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  max-width: 72ex;
+  font-weight: normal;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.docs-inline-code {
+  background-color: #f5f5f0;
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  font-size: 0.89rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 2px;
+}
+
+.property {
+  border-width: 1px;
+  border-style: solid;
+  color: #d54309;
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  font-size: 0.71rem;
+  line-height: 1;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 2px;
+  font-weight: normal;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.1em;
+}
+
+.prose-graf-intro {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.81rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+@media all and (min-width: 75em) {
+  .prose-graf-intro {
+    font-size: 0.88rem;
+  }
+}
+
+.text-color .example {
+  border-bottom-width: 1px;
+  border-bottom-color: #e6e6e6;
+  border-bottom-style: solid;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+}
+
+.output-list {
+  display: -webkit-box  !important;
+  display: -ms-flexbox  !important;
+  display: flex  !important;
+  -ms-flex-wrap: wrap  !important;
+  flex-wrap: wrap  !important;
+  margin-top: 0;
+  width: 100%;
+}
+.output-list .output-utility,
+.output-list .output-css,
+.output-list .output-variable {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #adadad;
+  border-bottom-style: solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  min-height: 2rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+}
+.output-list .output-utility {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 33.3333333333%;
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.88rem;
+  padding-right: 1rem;
+}
+.output-list .output-css {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 50%;
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  font-size: 0.83rem;
+  padding-right: 1rem;
+}
+.output-list .output-css .output-token {
+  display: inline-block;
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  font-size: 0.83rem;
+}
+.output-list .output-variable {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 16.6666666667%;
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  font-size: 0.83rem;
+  font-weight: 300;
+}
+
+.output-token {
+  background-color: white;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  border-style: solid;
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  font-size: 0.89rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 2px;
+  font-weight: normal;
+}
+
+.output-rule {
+  display: block;
+}
+.output-rule + .output-rule {
+  margin-top: 0.25rem;
+}
+
+.output-true, .output-false {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #0076d6;
+  display: inline-block;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  border-radius: 2px;
+  color: white;
+}
+
+.output-false {
+  background-color: #d54309;
+}
+
+li.display-inline-block {
+  margin-bottom: 0;
+}
+
+.page-introducing-uswds-2-0 .post-content img {
+  max-width: 20rem;
+  mix-blend-mode: darken;
+}
+
+.utilities-property-title {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.63rem;
+  margin-left: 2px;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.utilities-property {
+  background-color: white;
+  display: inline-block;
+  margin-top: 0;
+  padding: 0.25rem;
+  text-transform: none;
+  letter-spacing: initial;
+}
+
+.utilities-section {
+  border-top-width: 1px;
+  border-top-style: solid;
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+}
+
+.utilities-section-title-bar {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.utilities-section-title {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: normal;
+}
+.utilities-section-title code {
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  display: inline-block;
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  font-size: 1.01rem;
+  margin-right: 2px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 0.25rem;
+  font-weight: 300;
+}
+@media all and (min-width: 40em) {
+  .utilities-section-title.usa-grid-col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+.utilities-section-helper {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.75rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  max-width: none;
+  font-weight: normal;
+  color: #5c5c5c;
+}
+@media all and (min-width: 40em) {
+  .utilities-section-helper.usa-grid-col {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    width: auto;
+    max-width: 100%;
+  }
+}
+@media all and (min-width: 40em) {
+  .utilities-section-helper {
+    text-align: right;
+  }
+}
+
+.utility {
+  background-color: white;
+  border-width: 1px;
+  border-color: #2e2e2e;
+  border-style: solid;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-radius: 0.25rem;
+}
+
+.utility-title-bar {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.utility-title-bar > .usa-grid-row {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.utility-name.usa-grid-col {
+  max-width: 100%;
+}
+@media all and (min-width: 40em) {
+  .utility-name.usa-grid-col {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+.utility-title {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1.06rem;
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.utility-property {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.81rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.utility-property-code {
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  font-size: 0.83rem;
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: initial;
+  color: #d54309;
+}
+
+.utility-scope {
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+  display: inline;
+  margin: 0;
+}
+@media all and (min-width: 40em) {
+  .utility-scope {
+    text-align: right;
+    max-width: 70%;
+  }
+}
+@media all and (min-width: 40em) {
+  .utility-scope.usa-grid-col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+.utility-scope-button, .utility-scope-button-active a, .utility-scope-button-disabled {
+  display: inline-block;
+  font-size: 0.88rem;
+  line-height: 1;
+  margin-right: 2px;
+  margin-top: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 2px;
+}
+@media all and (min-width: 40em) {
+  .utility-scope-button, .utility-scope-button-active a, .utility-scope-button-disabled {
+    font-size: 0.94rem;
+    margin-right: 0.25rem;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border-radius: 0.25rem;
+  }
+}
+
+.utility-scope-button-disabled {
+  background-color: white;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  border-style: solid;
+  color: #c9c9c9;
+  text-decoration: line-through;
+}
+
+.utility-scope-button-active {
+  display: inline;
+}
+.utility-scope-button-active a {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #0076d6;
+  color: white;
+  text-decoration: none;
+}
+.utility-scope-button-active a:hover {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.utility-examples {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.utility-examples-title {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.94rem;
+  padding-top: 2rem;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  border-top: 1px solid #e6e6e6;
+}
+
+.utility-examples-helper {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.81rem;
+  margin-left: 0.5rem;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.utility-class, .utility-value-color, .utility-value {
+  background-color: #f0f0f0;
+  display: inline-block;
+  font-family: Roboto Mono Web, Bitstream Vera Sans Mono, Consolas, Courier, monospace;
+  font-size: 0.83rem;
+  margin: 0;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  border-radius: 2px;
+}
+
+.utility-value {
+  background-color: #f3e1e4;
+}
+
+.utility-value-color {
+  background-color: white;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  border-style: solid;
+  margin-top: 0;
+  font-weight: 300;
+  white-space: nowrap;
+  text-transform: lowercase;
+}
+
+.utility-value-color-chip {
+  height: 0.75rem;
+  border-radius: 99rem;
+  width: 0.75rem;
+  display: inline-block;
+  margin-right: 0.25rem;
+  vertical-align: middle;
+}
+
+.utility-example-container {
+  border-top-width: 1px;
+  border-top-color: #e6e6e6;
+  border-top-style: solid;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  max-width: none;
+  padding-top: 0.5rem;
+  overflow: hidden;
+}
+.utility-example-container > .usa-grid-row {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.utility-example-container > .usa-grid-row > * {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.utility-example {
+  max-width: 70%;
+}
+.utility-example.usa-grid-col {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+.utility-example-class.usa-grid-col {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 0px;
+  flex: 1 0 0;
+  width: auto;
+  max-width: 100%;
+}
+
+.utility-example-value.usa-grid-col {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+.utilities-output-heading {
+  border-bottom-width: 1px;
+  border-bottom-color: #e6e6e6;
+  border-bottom-style: solid;
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  padding-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.utility-code-sample {
+  background-color: #e6e6e6;
+  line-height: 1.4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.25rem;
+  white-space: pre-wrap;
+}
+
+.utility-note {
+  background-color: #ffbe2e;
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  max-width: none;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.utility-note + .utility-examples-title {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+.utility-note a {
+  color: #1b1b1b;
+}
+
+.utility-text {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  max-width: 72ex;
+}
+.utility-text + .utility-text {
+  margin-top: 0.5rem;
+}
+
+p + .usa-accordion,
+h2 + div:not(.usa-accordion__content),
+h3 + div:not(.usa-accordion__content),
+h4 + div:not(.usa-accordion__content),
+h5 + div:not(.usa-accordion__content),
+h6 + div:not(.usa-accordion__content) {
+  margin-top: 1rem;
+}
+
+.sidenav a {
+  padding-right: 0.25rem;
+}
+
+.default-container::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.site-font-lead {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 64ex;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 300;
+}
+.site-font-lead + p {
+  margin-top: 2rem;
+}
+
+.site-header .usa-button {
+  background-color: #2672de;
+}
+.site-header .usa-button:hover {
+  background-color: #0050d8;
+}
+.site-header .usa-button--outline-inverse {
+  background-color: transparent;
+  margin-right: 0;
+}
+.site-header .usa-button--outline-inverse:hover {
+  background-color: transparent;
+}
+@media all and (min-width: 64em) {
+  .site-header .navbar--container {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: right;
+    height: 5rem;
+  }
+}
+.site-header .navbar--container .usa-button {
+  display: none;
+}
+@media all and (min-width: 64em) {
+  .site-header .navbar--container .usa-button {
+    display: initial;
+  }
+}
+
+.site-docs-card-link {
+  border-top: 0.25rem solid rgba(0, 0, 0, 0.1);
+  padding-top: 0.75rem;
+}
+.site-docs-card-link:hover {
+  border-color: #005ea2;
+}
+.site-docs-card-link:hover a {
+  color: black;
+  -webkit-text-decoration-color: #e6e6e6;
+  text-decoration-color: #e6e6e6;
+}
+
+.block-link::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  content: "";
+}
+
+.usa-button-list.site-button-list .usa-button {
+  font-size: 0.94rem;
+  margin: 0;
+  width: 100%;
+}
+@media all and (min-width: 64em) {
+  .usa-button-list.site-button-list .usa-button {
+    width: auto;
+  }
+}
+.usa-button-list.site-button-list li + li .usa-button {
+  margin-top: 0.25rem;
+}
+@media all and (min-width: 64em) {
+  .usa-button-list.site-button-list li + li .usa-button {
+    margin-left: 2px;
+    margin-top: 0;
+  }
+}
+
+.usa-nav__inner {
+  margin-bottom: 0;
+}
+.usa-nav__inner .usa-button:hover {
+  background-color: #0050d8;
+}
+.usa-nav__inner .usa-button.site-button-version {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #fcfcfc;
+}
+.usa-nav__inner .usa-button.site-button-version:visited {
+  color: rgba(0, 0, 0, 0.8);
+}
+.usa-nav__inner .usa-button.site-button-version:hover {
+  background-color: #face00;
+}
+.usa-nav__inner .usa-button.site-button-outline-secondary {
+  -webkit-box-shadow: inset 0 0 0 2px #005ea2;
+  box-shadow: inset 0 0 0 2px #005ea2;
+  background-color: transparent;
+  color: #005ea2;
+}
+.usa-nav__inner .usa-button.site-button-outline-secondary:visited {
+  color: #005ea2;
+}
+.usa-nav__inner .usa-button.site-button-outline-secondary:hover {
+  -webkit-box-shadow: inset 0 0 0 2px #0050d8;
+  box-shadow: inset 0 0 0 2px #0050d8;
+  background-color: transparent;
+  color: #0050d8;
+}
+
+.site-header-dark .site-header-navbar {
+  background-color: #252f3e;
+}
+.site-header-dark .site-logo a {
+  color: white;
+}
+.site-header-dark .usa-button.site-button-outline-secondary {
+  -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.7);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+}
+.site-header-dark .usa-button.site-button-outline-secondary:hover {
+  -webkit-box-shadow: inset 0 0 0 2px white;
+  box-shadow: inset 0 0 0 2px white;
+  background-color: transparent;
+  color: white;
+}
+@media all and (min-width: 64em) {
+  .site-header-dark .usa-button.site-button-outline-secondary {
+    margin-right: 2rem;
+  }
+}
+
+.site-page-title {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.foo {
+  border-width: 0.25rem;
+  border-style: solid;
+}
+
+pre {
+  white-space: pre;
+}
+
+@media all and (min-width: 40em) {
+  .site-table-wrapper {
+    border: 1px solid;
+    border-radius: 0.25rem;
+    display: block;
+    background-color: white;
+  }
+}
+.site-table-wrapper .site-table-responsive {
+  margin: 0;
+}
+.site-table-wrapper + .site-table-wrapper {
+  margin-top: 1.5rem;
+}
+
+.site-prose .site-table-responsive,
+.site-table-responsive {
+  width: 100%;
+  max-width: none;
+  border-collapse: collapse;
+}
+@media all and (max-width: 39.99em) {
+  .site-prose .site-table-responsive,
+.site-table-responsive {
+    font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    display: block;
+    width: 100%;
+  }
+  .site-prose .site-table-responsive caption,
+.site-table-responsive caption {
+    display: block;
+  }
+  .site-prose .site-table-responsive thead,
+.site-table-responsive thead {
+    position: absolute;
+    left: -999em;
+  }
+  .site-prose .site-table-responsive caption,
+.site-prose .site-table-responsive tbody,
+.site-prose .site-table-responsive tr,
+.site-prose .site-table-responsive th,
+.site-prose .site-table-responsive td,
+.site-prose .site-table-responsive tfoot,
+.site-table-responsive caption,
+.site-table-responsive tbody,
+.site-table-responsive tr,
+.site-table-responsive th,
+.site-table-responsive td,
+.site-table-responsive tfoot {
+    border: 0;
+    display: block;
+    padding: 0;
+    text-align: left;
+    white-space: normal;
+  }
+  .site-prose .site-table-responsive caption,
+.site-table-responsive caption {
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+  }
+  .site-prose .site-table-responsive td,
+.site-prose .site-table-responsive th,
+.site-table-responsive td,
+.site-table-responsive th {
+    width: 100%;
+    padding: 0.25rem 0.25rem 0.25rem 0;
+    position: relative;
+    z-index: 100;
+  }
+  .site-prose .site-table-responsive td[data-title]:before,
+.site-prose .site-table-responsive th[data-title]:before,
+.site-table-responsive td[data-title]:before,
+.site-table-responsive th[data-title]:before {
+    font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    content: attr(data-title);
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    font-weight: normal;
+    margin-right: 0.25rem;
+    max-width: 7.5rem;
+    text-align: left;
+    width: 50%;
+  }
+  .site-prose .site-table-responsive td.is-empty,
+.site-prose .site-table-responsive th.is-empty,
+.site-table-responsive td.is-empty,
+.site-table-responsive th.is-empty {
+    display: none;
+  }
+  .site-prose .site-table-responsive th:not([data-title]),
+.site-table-responsive th:not([data-title]) {
+    font-weight: bold;
+  }
+  .site-prose .site-table-responsive tr,
+.site-table-responsive tr {
+    background-color: white;
+    border: 1px solid;
+    border-radius: 0.25rem;
+    display: block;
+    padding-bottom: 2px;
+    position: relative;
+  }
+  .site-prose .site-table-responsive tr::after,
+.site-table-responsive tr::after {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    left: 0;
+    content: "";
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+    display: block;
+    max-width: 7.5rem;
+    position: absolute;
+    width: 50%;
+    z-index: 0;
+  }
+  .site-prose .site-table-responsive tr.is-empty,
+.site-table-responsive tr.is-empty {
+    display: none;
+  }
+  .site-prose .site-table-responsive tr + tr,
+.site-table-responsive tr + tr {
+    margin-top: 0.5rem;
+  }
+  .site-prose .site-table-responsive td,
+.site-table-responsive td {
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 1.5;
+  }
+  .site-prose .site-table-responsive td:empty,
+.site-table-responsive td:empty {
+    display: none;
+  }
+  .site-prose .site-table-responsive td + td,
+.site-table-responsive td + td {
+    border-top: 1px solid #e6e6e6;
+  }
+  .site-prose .site-table-responsive td .site-inline-swatch,
+.site-table-responsive td .site-inline-swatch {
+    width: 100%;
+  }
+}
+@media all and (min-width: 40em) {
+  .site-prose .site-table-responsive thead,
+.site-table-responsive thead {
+    font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 0.75rem;
+  }
+  .site-prose .site-table-responsive caption,
+.site-table-responsive caption {
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+  }
+  .site-prose .site-table-responsive caption,
+.site-prose .site-table-responsive tbody,
+.site-prose .site-table-responsive tr,
+.site-prose .site-table-responsive th,
+.site-prose .site-table-responsive td,
+.site-prose .site-table-responsive tfoot,
+.site-table-responsive caption,
+.site-table-responsive tbody,
+.site-table-responsive tr,
+.site-table-responsive th,
+.site-table-responsive td,
+.site-table-responsive tfoot {
+    text-align: left;
+  }
+  .site-prose .site-table-responsive th:first-child,
+.site-table-responsive th:first-child {
+    padding-left: 1rem;
+  }
+  .site-prose .site-table-responsive tr,
+.site-prose .site-table-responsive td,
+.site-table-responsive tr,
+.site-table-responsive td {
+    background-color: transparent;
+  }
+  .site-prose .site-table-responsive th,
+.site-prose .site-table-responsive td,
+.site-table-responsive th,
+.site-table-responsive td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border: none;
+    text-align: left;
+  }
+  .site-prose .site-table-responsive th:first-child,
+.site-prose .site-table-responsive td:first-child,
+.site-table-responsive th:first-child,
+.site-table-responsive td:first-child {
+    padding-left: 1rem;
+  }
+  .site-prose .site-table-responsive th:last-child,
+.site-prose .site-table-responsive td:last-child,
+.site-table-responsive th:last-child,
+.site-table-responsive td:last-child {
+    padding-right: 1rem;
+  }
+  .site-prose .site-table-responsive tbody tr,
+.site-table-responsive tbody tr {
+    border: none;
+    border-top: 2px solid;
+  }
+  .site-prose .site-table-responsive tbody tr + tr,
+.site-table-responsive tbody tr + tr {
+    border-top: 1px solid #e6e6e6;
+  }
+}
+.site-prose .site-table-responsive.site-table-simple p,
+.site-table-responsive.site-table-simple p {
+  margin: 0;
+}
+@media all and (min-width: 40em) {
+  .site-prose .site-table-responsive.site-table-simple thead,
+.site-table-responsive.site-table-simple thead {
+    font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 0.81rem;
+  }
+  .site-prose .site-table-responsive.site-table-simple th,
+.site-prose .site-table-responsive.site-table-simple td,
+.site-table-responsive.site-table-simple th,
+.site-table-responsive.site-table-simple td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
+    border: none;
+  }
+  .site-prose .site-table-responsive.site-table-simple th:first-child,
+.site-prose .site-table-responsive.site-table-simple td:first-child,
+.site-table-responsive.site-table-simple th:first-child,
+.site-table-responsive.site-table-simple td:first-child {
+    padding-left: 0;
+  }
+  .site-prose .site-table-responsive.site-table-simple th:last-child,
+.site-prose .site-table-responsive.site-table-simple td:last-child,
+.site-table-responsive.site-table-simple th:last-child,
+.site-table-responsive.site-table-simple td:last-child {
+    padding-right: 0;
+  }
+  .site-prose .site-table-responsive.site-table-simple tr,
+.site-table-responsive.site-table-simple tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .site-prose .site-table-responsive.site-table-simple tr th,
+.site-prose .site-table-responsive.site-table-simple tr td,
+.site-table-responsive.site-table-simple tr th,
+.site-table-responsive.site-table-simple tr td {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
+  }
+  .site-prose .site-table-responsive.site-table-simple tbody tr,
+.site-table-responsive.site-table-simple tbody tr {
+    border: none;
+    border-top: 1px solid #adadad;
+  }
+  .site-prose .site-table-responsive.site-table-simple tbody tr:last-child,
+.site-table-responsive.site-table-simple tbody tr:last-child {
+    border-bottom: 1px solid #adadad;
+  }
+}
+
+.site-inline-swatch {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: middle;
+}
+table .site-inline-swatch {
+  display: block;
+}
+
+.site-caption-swatches {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #1b1b1b;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding-left: 0;
+}
+@media all and (min-width: 40em) {
+  .site-caption-swatches {
+    padding-left: 1rem;
+  }
+}
+
+.site-table-note {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  padding: 1rem;
+  background-color: #ffbe2e;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+@media all and (min-width: 40em) {
+  .site-table-note {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media all and (min-width: 30em) {
+  .site-title-short {
+    display: none;
+  }
+}
+
+@media all and (max-width: 29.99em) {
+  .site-title {
+    position: absolute;
+    left: -999em;
+  }
+}
+
+.site-accordion-docs,
+.site-accordion-code,
+.site-accordion {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.site-prose {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.site-prose > p {
+  line-height: 1.6;
+  max-width: 72ex;
+}
+.site-prose > p + * {
+  margin-top: 1em;
+}
+.site-prose > h2,
+.site-prose > h3,
+.site-prose > h4,
+.site-prose > h5,
+.site-prose > h5 {
+  color: #1b1b1b;
+  margin: 0;
+}
+.site-prose > h3 {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+.site-prose > .site-text-intro + p {
+  margin-top: 2rem;
+}
+.site-prose > header + .site-text-intro {
+  margin-top: 0.5rem;
+}
+.site-prose > .usa-content-list {
+  padding-left: 0;
+  max-width: 72ex;
+}
+.site-prose > li,
+.site-prose > ul li,
+.site-prose > ol li {
+  line-height: 1.6;
+  max-width: 72ex;
+}
+
+.site-text-intro, .site-component-section .site-text-intro, .site-prose > .site-text-intro {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+
+.usa-accordion--bordered .usa-accordion__content {
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 1.5rem;
+}
+
+.usa-content-list {
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+.usa-content-list > li {
+  margin-bottom: 0;
+  max-width: unset;
+}
+.usa-content-list > li {
+  border-top: 1px solid #e6e6e6;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  max-width: 72ex;
+}
+.usa-content-list > li ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+.usa-content-list > li li {
+  margin-top: 0.25rem;
+  max-width: calc(measure($site-measure) - units(3));
+}
+.usa-content-list ol {
+  counter-reset: ol-counter;
+  list-style: none;
+  padding-left: 0;
+}
+.usa-content-list ol li {
+  counter-increment: ol-counter;
+  margin-top: 0.5em;
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+}
+.usa-content-list ol li:before {
+  content: counter(ol-counter) ". ";
+  display: inline-block;
+  font-size: 0.81rem;
+  font-weight: bold;
+  padding-right: 0.25rem;
+  text-align: left;
+  text-indent: 0;
+  width: 1.5rem;
+}
+
+.site-accordion-code .usa-accordion__button {
+  background-image: url("../img/minus-thin-white.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../img/minus-thin-white.svg"), linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+  background-color: #0050d8;
+  color: white;
+}
+.site-accordion-code .usa-accordion__button:hover {
+  background-color: #162e51;
+}
+.site-accordion-code .usa-accordion__button[aria-expanded=false] {
+  background-image: url("../img/plus-thin-white.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../img/plus-thin-white.svg"), linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+
+.site-accordion-docs .usa-accordion__button,
+.site-accordion .usa-accordion__button {
+  background-image: url("../img/minus-thin-ink.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../img/minus-thin-ink.svg"), linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+.site-accordion-docs .usa-accordion__button[aria-expanded=false],
+.site-accordion .usa-accordion__button[aria-expanded=false] {
+  background-image: url("../img/plus-thin-ink.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../img/plus-thin-ink.svg"), linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+
+.site-component-section {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 72ex;
+  margin-top: 2.5rem;
+}
+.site-component-section > h2 {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #1b1b1b;
+  margin: 0;
+}
+.site-component-usage p + * {
+  margin-top: 1em;
+}
+.site-component-usage h2,
+.site-component-usage h3,
+.site-component-usage h4,
+.site-component-usage h5,
+.site-component-usage h5 {
+  color: #1b1b1b;
+  margin: 0;
+}
+.site-component-usage h3 {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+.site-component-usage h4 {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: #5c5c5c;
+  font-weight: 200;
+}
+
+.site-prose > * + h2,
+.site-prose > * + h3,
+.site-prose > * + h4,
+.site-prose > * + h5, .site-component-section > * + h2, .site-component-usage * + h2,
+.site-component-usage * + h3,
+.site-component-usage * + h4,
+.site-component-usage * + h5 {
+  margin-top: 2em;
+}
+.site-prose > h2 + *,
+.site-prose > h3 + *,
+.site-prose > h4 + *,
+.site-prose > h5 + *, .site-component-section > h2 + *, .site-component-usage h2 + *,
+.site-component-usage h3 + *,
+.site-component-usage h4 + *,
+.site-component-usage h5 + * {
+  margin-top: 1em;
+}
+
+.site-button-list .usa-button {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.site-header {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.site-header .usa-menu-btn {
+  font-size: 0.81rem;
+}
+
+.site-nav {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.site-nav .usa-accordion {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.site-nav .usa-nav__close {
+  background-image: url("../img/close-blue-60v-alt.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../img/close-blue-60v-alt.svg"), linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+  height: 3rem;
+  width: 3rem;
+  background-color: #f0f0f0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+}
+.site-nav .usa-nav__link[aria-expanded=true] {
+  background-image: url("../img/minus-thin-ink.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../img/minus-thin-ink.svg"), linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+.site-nav .usa-nav__link[aria-expanded=false] {
+  background-image: url("../img/plus-thin-ink.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../img/plus-thin-ink.svg"), linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+.site-nav .usa-nav__primary button {
+  line-height: 1.2;
+}
+.site-nav .usa-nav__submenu-item {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.88rem;
+  line-height: 1.2;
+}
+
+.site-banner {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.site-banner .usa-accordion {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.site-banner .usa-banner__header-text,
+.site-banner .usa-banner__header-action,
+.site-banner .usa-banner__button {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+.site-banner .usa-banner__content {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+.site-banner .usa-banner__content p {
+  line-height: 1.6;
+}
+.site-banner .usa-banner__header-action::after {
+  background-image: url("../img/angle-arrow-down-primary.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+  background-image: url("../img/angle-arrow-down-primary.svg"), linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 0.5rem;
+  content: "";
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  /* stylelint-disable block-closing-brace-newline-after, at-rule-empty-line-before */
+  margin-left: 0.25rem;
+  /* stylelint-enable */
+}
+@media all and (min-width: 40em) {
+  .site-banner .usa-banner__button::after {
+    background-image: url("../img/angle-arrow-down-primary.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+    background-image: url("../img/angle-arrow-down-primary.svg"), linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 0.5rem;
+    content: "";
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+    /* stylelint-disable block-closing-brace-newline-after, at-rule-empty-line-before */
+    margin-left: 2px;
+    /* stylelint-enable */
+  }
+}
+@media all and (min-width: 40em) {
+  .site-banner .usa-banner__button[aria-expanded=true]::after {
+    background-image: url("../img/angle-arrow-up-primary.svg"), -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent));
+    background-image: url("../img/angle-arrow-up-primary.svg"), linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 0.5rem;
+    content: "";
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+    /* stylelint-disable block-closing-brace-newline-after, at-rule-empty-line-before */
+    margin-left: 2px;
+    /* stylelint-enable */
+  }
+}
+
+.usa-content-list {
+  max-width: 72ex;
+}
+
+.site-button {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.site-table,
+.usa-prose > .site-table {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.usa-accordion__button:hover {
+  text-decoration: none;
+}
+
+.usa-hero__callout p {
+  font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+figure.highlight {
+  margin: 0;
+}
+
+pre.lineno {
+  color: #757575;
+  font-weight: 300;
+  margin-right: 2ch;
+  text-align: right;
+  width: 3ch;
+}
+
+[class*=language-] {
+  color: #757575;
+}
+[class*=language-] .nt {
+  color: #1a4480;
+}
+[class*=language-] .s {
+  color: #0050d8;
+}
+
+#utility-mixins p,
+#utility-mixins ul {
+  max-width: 72ex;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+.site-accordion .usa-accordion__content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.site-note {
+  background-color: #ffbe2e;
+  max-width: 72ex;
+  padding: 0.5rem;
+  border-radius: 2px;
+}
+.site-note a {
+  color: #1b1b1b;
+}
+
+.site-hero {
+  background-color: #f0f0f0;
+  padding-bottom: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  background-image: url("../img/introducing-uswds-2-0/feature-image.png");
+  background-repeat: no-repeat;
+  background-position: 0 1rem;
+  background-size: 100% auto;
+  padding-top: 68vw;
+}
+@media all and (min-width: 40em) {
+  .site-hero {
+    padding-bottom: 4rem;
+    padding-top: 3rem;
+    background-image: url("../img/introducing-uswds-2-0/feature-image-homepage.svg");
+    background-repeat: no-repeat;
+    background-position: left calc(30rem + 1rem) top 0.75rem;
+    background-size: auto 400px;
+  }
+}
+@media all and (min-width: 55em) {
+  .site-hero {
+    background-position: left calc(50% + 15rem) top 0.75rem;
+  }
+}
+
+.post-content h2 {
+  line-height: 1.2;
+}
+
+.page-website-standards .site-subheading {
+  display: none;
+}
+
+.site-nav .usagov-search-autocomplete {
+  min-width: 0;
+}
+.site-nav .usa-button {
+  display: block;
+}
+
+.site-button-github .logo {
+  bottom: 2px;
+  display: inline-block;
+  fill: white;
+  margin-right: 0.25rem;
+  vertical-align: middle;
+  width: 1.5rem;
+}
+.site-button-github .logo path {
+  fill: white;
+}
+.site-button-github .text {
+  bottom: -2px;
+  position: relative;
+}
+@media all and (min-width: 64em) {
+  .site-button-github .text {
+    position: absolute;
+    left: -999em;
+  }
+}
+@media all and (min-width: 64em) {
+  .site-button-github.usa-button {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+    display: inline-block;
+  }
+  .site-button-github.usa-button .logo {
+    padding-left: 0;
+    padding-right: 0;
+    bottom: 1px;
+    margin-left: 0.25rem;
+    position: relative;
+    width: 2rem;
+  }
+  .site-button-github.usa-button .logo path {
+    fill: rgba(255, 255, 255, 0.7);
+  }
+  .site-button-github.usa-button:hover, .site-button-github.usa-button:active {
+    background-color: transparent;
+  }
+  .site-button-github.usa-button:hover .logo path, .site-button-github.usa-button:active .logo path {
+    fill: white;
+  }
+  .site-button-github .text {
+    position: absolute;
+    left: -999em;
+  }
+}
+
+@media all and (min-width: 64em) {
+  .site-header .buttons .usa-button {
+    position: relative;
+    bottom: -2px;
+  }
+
+  .site-header .buttons .site-button-standards {
+    -webkit-box-shadow: inset 0 0 0 2px #e5a000;
+    box-shadow: inset 0 0 0 2px #e5a000;
+    color: #e5a000;
+  }
+}
+.embed-youtube {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.embed-youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.site-roadmap-list,
+.site-roadmap-list__sublist {
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.site-roadmap-list {
+  margin-top: 1rem;
+}
+
+.site-roadmap-list__item,
+.site-roadmap-list__subitem {
+  border-top-width: 1px;
+  border-top-style: solid;
+  line-height: 1.4;
+  padding-top: 0.25rem;
+  margin-top: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.site-roadmap-list__item {
+  border-top-color: #1b1b1b;
+  border-top-style: solid;
+  font-weight: bold;
+}
+.site-roadmap-list__item .usa-tag {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.site-roadmap-list__sublist {
+  width: 100%;
+}
+.site-roadmap-list__sublist .site-roadmap-list__item {
+  border-top-color: #e6e6e6;
+  border-top-style: solid;
+  font-weight: normal;
+}
+/*# sourceMappingURL=uswds-custom.css.map */

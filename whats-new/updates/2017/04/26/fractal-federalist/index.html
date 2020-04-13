@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <meta name="robots" content="noindex, nofollow">
+  
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Introducing Fractal and Federalist | U.S. Web Design System (USWDS)</title>
+<meta property="og:title" content="Introducing Fractal and Federalist | U.S. Web Design System (USWDS)">
+
+
+<meta name="description" content="We've added two powerful, new tools to our development workflow.">
+<meta property="og:description" content="We've added two powerful, new tools to our development workflow.">
+
+<meta name="twitter:card" value="summary_large_image">
+<meta name="twitter:site" content="@USWDS">
+<meta property="og:type" content="article">
+
+
+
+
+
+  
+  <meta property="og:image" content="/HCD-Discovery-Concept-Guide/img/updates/fractal_v1.0.0.png">
+
+  
+  <meta property="og:image" content="/HCD-Discovery-Concept-Guide/img/updates/fractal_v1.0.0.png">
+
+
+
+
+<!-- Include Typetura Responsive Typography
+================================================== -->
+<script src="https://typetura-civic.s3.us-east-2.amazonaws.com/typetura.js"></script>
+<link rel="stylesheet" href="https://typetura-civic.s3.us-east-2.amazonaws.com/civic.css" />
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-192.png">
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+<!-- env: dev -->
+
+<style>
+  * {
+    scroll-behavior: smooth !important
+  }
+  h1:target,
+  h2:target,
+  h3:target,
+  h4:target {
+    position: relative;
+    color: #2672de !important;
+  }
+
+  h1:target:before,
+  h2:target:before,
+  h3:target:before,
+  h4:target:before {
+    content: '•';
+    position: absolute;
+    left: -.75em;
+  }
+</style>
+
+
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-fonts.css">
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-components.css">
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-custom.css">
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-utilities.css">
+
+
+  </head>
+  <body class="page-introducing-fractal-and-federalist layout-post ">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+<header class="usa-header site-header site-header-dark" role="banner">
+  <div class="">
+    <div class="usa-logo site-logo" id="logo">
+      <em class="usa-logo__text">
+        <a class="margin-right-05" href="/HCD-Discovery-Concept-Guide/" title="Home" aria-label="U.S. Web Design System (USWDS) home">
+          <span class="site-title">HCD Guide Series</span>
+        </a>
+      </em>
+    </div>
+    <button class="usa-menu-btn">Menu</button>
+  </div>
+</header>
+<div class="usa-overlay"></div>
+
+<nav role="navigation" class="usa-nav site-nav sidenav-mobile">
+  <button class="usa-nav__close">
+    <span class="usa-sr-only">Close</span>
+  </button>
+
+  <form
+    id="search_form-mobile"
+    class="usa-search usa-search--small desktop:margin-right-4"
+    action="https://search.usa.gov/search"
+    accept-charset="UTF-8"
+    method="get">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <input type="hidden" name="affiliate" id="affiliate-mobile" value="uswds" />
+    <div role="search">
+      <label class="usa-sr-only" for="query-mobile">Search</label>
+      <input
+        id="query-mobile"
+        class="usa-input usagov-search-autocomplete"
+        name="query"
+        type="search"
+        autocomplete="off"/>
+      <button
+        class="usa-button margin-top-0"
+        type="submit"
+        name="commit">
+        <span class="usa-sr-only">Search</span>
+      </button>
+    </div>
+  </form>
+  <div class="usa-nav__inner">
+    <ul class="usa-nav__primary usa-accordion">
+      
+
+    </ul>
+    <div class="buttons">
+  <a
+    class="usa-button site-button-outline-secondary site-button-standards margin-x-0 desktop:margin-right-1 padding-x-05 desktop:padding-left-1 desktop:padding-right-05 desktop-lg:padding-left-205 desktop-lg:padding-right-2 font-lang-sm"
+    href="/HCD-Discovery-Concept-Guide/website-standards/"
+    onclick="ga('send', 'event', 'Read website standards', 'Clicked Read website standards from inside site');"
+  >
+    Read website standards
+  </a>
+  <a
+    class="usa-button site-button-outline-secondary site-button-download margin-x-0 desktop:margin-right-1 desktop:padding-left-1 desktop:padding-right-05 desktop-lg:padding-left-205 desktop-lg:padding-right-2 font-lang-sm"
+    href="/HCD-Discovery-Concept-Guide/download/"
+    onclick="ga('send', 'event', 'Downloaded code and design files', 'Clicked Download code and design files from inside site');"
+  >
+    Download <span class="version desktop:display-none desktop-lg:display-inline">v2.6.0</span>
+  </a>
+  <a
+    class="usa-button site-button-github margin-x-0 desktop:margin-right-4 font-lang-sm"
+    href="https://github.com/uswds/uswds"
+    onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');"
+  >
+    <?xml version="1.0" encoding="UTF-8"?><svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="33"
+  height="32"
+  viewBox="0 0 33 32"
+  class="logo"
+>
+  <title>Github logo</title>
+  <path
+    fill="#161514"
+    fill-rule="evenodd"
+    d="M16.288 0C7.294 0 0 7.293 0 16.29c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 1.635.115 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 1.367-.438 4.479 1.67a15.602 15.602 0 0 1 4.078-.549 15.62 15.62 0 0 1 4.078.549c3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 4.311 1.044 1.138 1.674 2.593 1.674 4.371 0 6.258-3.809 7.635-7.437 8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455C32.579 7.293 25.285 0 16.288 0"
+  />
+</svg>
+
+    <span class="text">View on GitHub</span>
+  </a>
+</div>
+
+
+  </div>
+</nav>
+
+
+<div class="default-container">
+  <aside class="sidenav">
+    
+    
+  </aside>
+
+  <main id="main-content" class="main-content">
+    <div class="styleguide-content usa-prose site-prose">
+    
+      
+<article id="whats-new-updates-2017-04-26-fractal-federalist">
+  <header class="post-meta">
+    <p class="post-category site-subheading">
+      engineering
+    </p>
+
+    <h1 class="post-title font-lang-11 tablet:font-lang-14 text-thin">
+      
+      Introducing Fractal and Federalist
+      
+    </h1>
+
+    
+    <span class="post-date site-subheading">By Shawn Allen</span>
+    
+    <time class="post-date site-subheading" datetime="2017-04-26T00:00:00">
+      April 26, 2017
+    </time>
+  </header>
+
+  <div class="post-content site-prose measure-4 margin-top-4">
+  
+    <p class="site-text-intro">
+  We've recently added two powerful tools to our development workflow that
+  allow us to preview, test, and publish the Standards code more quickly
+  and easily.
+</p>
+
+<h2 id="fractal">Fractal</h2>
+
+<p><a href="http://fractal.build">Fractal</a> is a powerful and flexible framework for building interactive
+component libraries. It’s similar to <a href="https://jekyllrb.com/">Jekyll</a> (which we use to publish this
+site) in one key respect: It operates primarily on simple file naming
+conventions. Organize your files in a specific way, using the content and data
+formats it understands, and it will generate a web site automatically.</p>
+
+<p><strong>Check out the Standards in Fractal:</strong></p>
+
+<p><a href="https://federalist.fr.cloud.gov/preview/18f/web-design-standards/develop/"><img src="/HCD-Discovery-Concept-Guide/img/updates/fractal_v1.0.0.png" alt="View the Standards in Fractal" /></a></p>
+
+<h3 id="why-fractal">Why Fractal?</h3>
+
+<ul>
+  <li>
+    <p><strong>It’s <a href="https://opensource.org/">open source</a></strong>, so we didn’t have to pay for it (which can be
+time-consuming and difficult to authorize in government), and we can easily
+modify it to suit our needs.</p>
+  </li>
+  <li>
+    <p><strong>It’s easy to use.</strong> Fractal supports some of the same, user-friendly file
+formats as Jekyll, such as <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> and <a href="https://en.wikipedia.org/wiki/YAML">YAML</a>; and it comes with a handy
+development server that reloads the site automatically whenever you change a
+file.</p>
+  </li>
+  <li>
+    <p>It generates <strong>standalone HTML previews of each component</strong>, which we can use
+for <a href="https://www.w3.org/wiki/Accessibility_testing">accessibility</a>, <a href="https://www.smashingmagazine.com/2016/02/high-impact-minimal-effort-cross-browser-testing/">cross-browser</a>, <a href="/HCD-Discovery-Concept-Guide/performance/">performance</a>, and <a href="https://visualregressiontesting.com/">visual regression</a> testing.</p>
+  </li>
+  <li>
+    <p><strong>It uses or supports many of the technologies we use already</strong> (or intend to
+use in the future), such as <a href="https://nodejs.org/">Node.js</a> (the JavaScript environment in which
+we write, build, and publish our code) and <a href="https://mozilla.github.io/nunjucks/">Nunjucks</a> templates — which are
+compatible with a number of other template languages, including <a href="http://jinja.pocoo.org/">Jinja2</a> for
+Python and <a href="https://twig.sensiolabs.org/">Twig</a>, the PHP templating engine <a href="https://www.drupal.org/docs/8/theming/twig">used by Drupal</a>.</p>
+  </li>
+  <li>
+    <p>Fractal offers a <strong><a href="http://fractal.build/guide/customisation/web-themes">customizable theme engine</a></strong>, so we can make it look and
+feel like the Standards.</p>
+  </li>
+</ul>
+
+<h3 id="thinking-in-components">Thinking in components</h3>
+
+<p>Fractal’s component-oriented architecture nudged us to consider how each of
+<a href="/HCD-Discovery-Concept-Guide/components/">our own components</a> really <em>work</em>: What are
+their moving parts, and how do their “variants” (for instance, our <a href="/HCD-Discovery-Concept-Guide/components/headers/#basic">basic</a> and <a href="/HCD-Discovery-Concept-Guide/components/headers/#extended">extended</a> headers) differ from one another? The process
+of adapting our components to Fractal produced a basic <a href="http://bradfrost.com/blog/post/conducting-an-interface-inventory/">interface inventory</a>,
+which shows us exactly where we are right now, and the interactive previews
+give us the confidence to make bigger changes because we can immediately see
+their impacts on various aspects of the Standards.</p>
+
+<h3 id="painless-development">Painless development</h3>
+
+<p>Fractal has also made it much simpler to work on the Standards’ CSS,
+JavaScript, and HTML component templates. Previously, the only “place” we could
+test our components interactively was on this site, which was tricky to set up:
+Each person needed to clone both of our repositories, <code class="highlighter-rouge">npm link</code> them together,
+then manually restart the Jekyll server so that it would detect changes to the
+code. Contrast that with the four commands necessary to get up and running now
+(assuming you have <a href="https://nodejs.org/">Node.js</a> version 6 or greater installed):</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/uswds/uswds.git
+<span class="nb">cd </span>web-design-standards
+npm <span class="nb">install
+</span>npm start
+</code></pre></div></div>
+
+<p>Now each of us has a powerful development, testing, and documentation tool at
+our fingertips, which we can use to test every aspect of the Standards code
+without any of the customizations we’ve made on this site. Fractal even comes
+with a handy resizable preview window we can use to test the responsiveness of
+each component or page template without having to resize our entire browser
+window.</p>
+
+<p><strong>But wait, there’s more!</strong> Fractal is an invaluable tool for those of us
+developing the Standards on our own computers, but what if we put it… <em>on the
+cloud?</em> That’s where Federalist comes in.</p>
+
+<h2 id="federalist">Federalist</h2>
+
+<p>In a nutshell, <a href="https://federalist.fr.cloud.gov">Federalist</a> is an open source <a href="https://pages.github.com/">GitHub Pages</a> for government: a platform that
+automatically builds and publishes static sites whenever we push commits to our
+<a href="https://github.com/uswds/uswds">GitHub repository</a>. Unlike GitHub Pages, though, Federalist isn’t limited to
+publishing just static files and <a href="https://jekyllrb.com/">Jekyll</a> sites: We can use the same <a href="https://nodejs.org/">Node.js</a>
+tools we use to develop the Standards to publish our Fractal component library
+as a static site on Federalist.</p>
+
+<p>One of Federalist’s most useful features is its ability to publish “branch
+previews”. Whenever we push commits to a branch on GitHub, Federalist
+builds a new version of the site and publishes it at a predictable URL. For
+instance, you can see the current state of our <a href="https://federalist.fr.cloud.gov/preview/18f/web-design-standards/develop/"><code class="highlighter-rouge">develop</code> branch
+preview</a>, or you can kick the tires of
+our <a href="https://github.com/uswds/uswds/releases/tag/v1.1.0-pre">forthcoming version 1.1.0 release</a> on the
+<a href="https://federalist.fr.cloud.gov/preview/18f/web-design-standards/release-1.1.0-pre/"><code class="highlighter-rouge">release-1.1.0-pre</code> branch</a>.</p>
+
+<p>Federalist hosts other websites across government and is open for business. If you’re interested in using it to host and preview your own federal static sites, please <a href="https://docs.google.com/forms/d/1iB8aW7c9r1QH3s8XElQCrnXRGjAiPUYpWG1CMeEqGIo/viewform">get in touch with that team!</a></p>
+
+<p>Equipped with Fractal and Federalist’s automatically published URLs, we can add
+preview links to each of our GitHub pull requests, and more quickly collect
+feedback on proposed changes. Whenever we create a new pull request, we can
+paste the following template at the top and replace <code class="highlighter-rouge">{BRANCH}</code> with the pull
+request branch name:</p>
+
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gu">### [:eyes: Preview on Federalist](https://federalist.fr.cloud.gov/preview/18f/web-design-standards/{BRANCH}/)</span>
+</code></pre></div></div>
+
+<p>The resulting <a href="https://github.com/uswds/uswds/pull/1836">pull request</a> description looks like this:</p>
+
+<p><a href="https://github.com/uswds/uswds/pull/1836"><img src="/HCD-Discovery-Concept-Guide/img/updates/federalist-preview-link.png" alt="A GitHub pull request with Fractal preview link" /></a></p>
+
+<p>We can even link directly to <a href="https://federalist.fr.cloud.gov/preview/18f/web-design-standards/release-1.1.0/components/detail/header--basic.html">individual</a> <a href="https://federalist.fr.cloud.gov/preview/18f/web-design-standards/release-1.1.0/components/detail/header--extended.html">components</a>,
+and their <a href="https://federalist.fr.cloud.gov/preview/18f/web-design-standards/release-1.1.0/components/preview/header--basic.html">standalone</a> <a href="https://federalist.fr.cloud.gov/preview/18f/web-design-standards/release-1.1.0/components/preview/header--extended.html">previews</a>. These links help us
+provide more targeted feedback and more quickly address any issues that arise.</p>
+
+<h3 id="versioned-assets-and-documentation">Versioned assets and documentation</h3>
+
+<p>Another technique we’re exploring is making versioned assets (the Standards
+CSS, JavaScript, images, and fonts) more readily accessible for testing on
+other sites. In fact we’re already doing this with Federalist, which
+includes the git branch in its preview URLs. This means you can link directly
+to the <a href="https://federalist.fr.cloud.gov/preview/18f/web-design-standards/release-1.1.0-pre/dist/js/uswds.min.js">JavaScript</a> or <a href="https://federalist.fr.cloud.gov/preview/18f/web-design-standards/release-1.1.0-pre/dist/css/uswds.min.css">CSS</a> from our <a href="https://github.com/uswds/uswds/releases/tag/v1.1.0-pre">version 1.1.0
+pre-release</a> once you know the URL format:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://federalist.fr.cloud.gov/preview/18f/web-design-standards/release-{VERSION}/dist/{FILENAME}
+</code></pre></div></div>
+
+<p>These URLs will only work for version 1.1.0 and above. You can get the assets
+from previous releases with <a href="https://unpkg.com/">unpkg</a> using URLs in this format:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://unpkg.com/uswds@{VERSION}/dist/{FILENAME}
+</code></pre></div></div>
+
+<p>Having these public, predictable URLs make it easier for us to create test
+cases with “live-coding” tools such as <a href="https://jsfiddle.net">JSFiddle</a> and
+<a href="https://codepen.io">CodePen</a>. We used JSFiddle to create a <a href="https://jsfiddle.net/47Lpu62z/9/">live test
+case</a> for <a href="https://github.com/uswds/uswds/issues/1762">this accordion
+bug</a> that references
+the JavaScript from a branch to demonstrate the proposed fix. In this case, the
+reporter of the issue was able to download that same script and confirm the fix
+on their project!</p>
+
+<h2 id="whats-next">What’s next</h2>
+
+<p>We’re working on a reorganization of this site that will incorporate Fractal’s
+standalone component previews and code samples so we don’t have to maintain
+them in two different places. We’re also exploring the possibility of enabling
+live editing capabilities in Fractal so that we can more quickly create and
+share test cases for each of our components. We’ve also got more work to do on
+fully porting our old component templates over to Fractal and better organizing
+our components, variants, page templates, and related documentation.</p>
+
+<p>If you have a suggestion, see something amiss, or just want to say hi, feel
+free to <a href="https://github.com/uswds/uswds/issues/new">file an issue on GitHub</a>,
+<a href="mailto:uswebdesignstandards@gsa.gov">email our mailing list</a>, or join our
+<a href="https://chat.18f.gov/">public Slack channel</a>.</p>
+
+
+  
+  </div>
+</article>
+
+    
+    </div>
+  </main>
+</div>
+
+
+<footer class="usa-footer site-footer" role="contentinfo">
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container footer-content">
+      <h3>Become part of the community</h3>
+      <p>
+        The Lab at OPM is both a space and practice.
+      </p>
+    </div>
+    <div class="footer-section-bottom">
+      <div class="grid-container">
+        <div class="logo-links">
+          <a href="http://www.gsa.gov/">
+            <img src="/HCD-Discovery-Concept-Guide/img/lab-logos/Logo_2017_color_RGB-01.svg" alt="The Lab" />
+          </a>
+        </div>
+        <p>
+          The Lab is part of the Office of Personnel Management.
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <meta name="robots" content="noindex, nofollow">
+  
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Present | U.S. Web Design System (USWDS)</title>
+<meta property="og:title" content="Present | U.S. Web Design System (USWDS)">
+
+
+<meta name="description" content="USWDS makes it easier to build accessible, mobile-friendly government websites for the American public.">
+<meta property="og:description" content="USWDS makes it easier to build accessible, mobile-friendly government websites for the American public.">
+
+<meta name="twitter:card" value="summary">
+<meta name="twitter:site" content="@USWDS">
+<meta property="og:type" content="article">
+
+
+
+
+
+  
+  <meta property="og:image" content="/HCD-Discovery-Concept-Guide/img/uswds-logo/lg-black.png">
+
+
+
+
+<!-- Include Typetura Responsive Typography
+================================================== -->
+<script src="https://typetura-civic.s3.us-east-2.amazonaws.com/typetura.js"></script>
+<link rel="stylesheet" href="https://typetura-civic.s3.us-east-2.amazonaws.com/civic.css" />
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-192.png">
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+<!-- env: dev -->
+
+<style>
+  * {
+    scroll-behavior: smooth !important
+  }
+  h1:target,
+  h2:target,
+  h3:target,
+  h4:target {
+    position: relative;
+    color: #2672de !important;
+  }
+
+  h1:target:before,
+  h2:target:before,
+  h3:target:before,
+  h4:target:before {
+    content: '•';
+    position: absolute;
+    left: -.75em;
+  }
+</style>
+
+
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-fonts.css">
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-components.css">
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-custom.css">
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-utilities.css">
+
+
+  </head>
+  <body class="page-present layout-styleguide ">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+<header class="usa-header site-header site-header-dark" role="banner">
+  <div class="">
+    <div class="usa-logo site-logo" id="logo">
+      <em class="usa-logo__text">
+        <a class="margin-right-05" href="/HCD-Discovery-Concept-Guide/" title="Home" aria-label="U.S. Web Design System (USWDS) home">
+          <span class="site-title">HCD Guide Series</span>
+        </a>
+      </em>
+    </div>
+    <button class="usa-menu-btn">Menu</button>
+  </div>
+</header>
+<div class="usa-overlay"></div>
+
+<nav role="navigation" class="usa-nav site-nav sidenav-mobile">
+  <button class="usa-nav__close">
+    <span class="usa-sr-only">Close</span>
+  </button>
+
+  <form
+    id="search_form-mobile"
+    class="usa-search usa-search--small desktop:margin-right-4"
+    action="https://search.usa.gov/search"
+    accept-charset="UTF-8"
+    method="get">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <input type="hidden" name="affiliate" id="affiliate-mobile" value="uswds" />
+    <div role="search">
+      <label class="usa-sr-only" for="query-mobile">Search</label>
+      <input
+        id="query-mobile"
+        class="usa-input usagov-search-autocomplete"
+        name="query"
+        type="search"
+        autocomplete="off"/>
+      <button
+        class="usa-button margin-top-0"
+        type="submit"
+        name="commit">
+        <span class="usa-sr-only">Search</span>
+      </button>
+    </div>
+  </form>
+  <div class="usa-nav__inner">
+    <ul class="usa-nav__primary usa-accordion">
+      
+
+    </ul>
+    <div class="buttons">
+  <a
+    class="usa-button site-button-outline-secondary site-button-standards margin-x-0 desktop:margin-right-1 padding-x-05 desktop:padding-left-1 desktop:padding-right-05 desktop-lg:padding-left-205 desktop-lg:padding-right-2 font-lang-sm"
+    href="/HCD-Discovery-Concept-Guide/website-standards/"
+    onclick="ga('send', 'event', 'Read website standards', 'Clicked Read website standards from inside site');"
+  >
+    Read website standards
+  </a>
+  <a
+    class="usa-button site-button-outline-secondary site-button-download margin-x-0 desktop:margin-right-1 desktop:padding-left-1 desktop:padding-right-05 desktop-lg:padding-left-205 desktop-lg:padding-right-2 font-lang-sm"
+    href="/HCD-Discovery-Concept-Guide/download/"
+    onclick="ga('send', 'event', 'Downloaded code and design files', 'Clicked Download code and design files from inside site');"
+  >
+    Download <span class="version desktop:display-none desktop-lg:display-inline">v2.6.0</span>
+  </a>
+  <a
+    class="usa-button site-button-github margin-x-0 desktop:margin-right-4 font-lang-sm"
+    href="https://github.com/uswds/uswds"
+    onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');"
+  >
+    <?xml version="1.0" encoding="UTF-8"?><svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="33"
+  height="32"
+  viewBox="0 0 33 32"
+  class="logo"
+>
+  <title>Github logo</title>
+  <path
+    fill="#161514"
+    fill-rule="evenodd"
+    d="M16.288 0C7.294 0 0 7.293 0 16.29c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 1.635.115 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 1.367-.438 4.479 1.67a15.602 15.602 0 0 1 4.078-.549 15.62 15.62 0 0 1 4.078.549c3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 4.311 1.044 1.138 1.674 2.593 1.674 4.371 0 6.258-3.809 7.635-7.437 8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455C32.579 7.293 25.285 0 16.288 0"
+  />
+</svg>
+
+    <span class="text">View on GitHub</span>
+  </a>
+</div>
+
+
+  </div>
+</nav>
+
+
+<div class="default-container">
+  <aside class="sidenav">
+    
+    
+    <ul class="site-sidenav usa-sidenav">
+      
+  
+
+  
+  <li class="usa-sidenav__item">
+    
+
+<a href="/HCD-Discovery-Concept-Guide/">
+  
+    Welcome
+  
+</a>
+
+
+    
+  </li>
+
+  
+
+  
+  <li class="usa-sidenav__item">
+    
+
+<a href="/HCD-Discovery-Concept-Guide/cycle/">
+  
+    Discovery Cycle
+  
+</a>
+
+
+    
+  </li>
+
+  
+
+  
+  <li class="usa-sidenav__item is-current">
+    
+
+<a href="/HCD-Discovery-Concept-Guide/present/"class="usa-current">
+  
+    Present
+  
+</a>
+
+    
+    
+    
+    
+  
+
+
+    
+  </li>
+
+  
+
+  
+  <li class="usa-sidenav__item">
+    
+
+<a href="/HCD-Discovery-Concept-Guide/next/">
+  
+    Next Steps
+  
+</a>
+
+
+    
+  </li>
+
+  
+
+  
+  <li class="usa-sidenav__item">
+    
+
+<a href="/HCD-Discovery-Concept-Guide/glossary/">
+  
+    Glossary
+  
+</a>
+
+
+    
+  </li>
+
+
+    </ul>
+    
+  </aside>
+
+  <main id="main-content" class="main-content">
+
+    <div class="styleguide-content usa-prose site-prose">
+      <header>
+        
+          
+            <p class="site-subheading">Discovery Concept Guide</p>
+          
+        
+        <h1 id="present" class="site-page-title">Present</h1>
+        
+      </header>
+
+      
+
+
+      <h2 id="introduction">Introduction</h2>
+
+<p>When preparing your opportunities presentation to your key audience, remember that you are taking them on a short guide through your research effort. Be sequential in your presentation and help your audience connect the dots. This method of presenting to the group keeps the presentation clear and it validates the opportunities.</p>
+
+<h2 id="storytelling">Storytelling</h2>
+
+<p>Your presentation is simple and brief— and also make sure that it is warm and reflects the human face of the research topic. Enliven and color the story by weaving in photos, quotes, or other human-centered elements. This allows you to portray the research in a way that a report or a white paper cannot.</p>
+
+<h2 id="seek-consensus">Seek Consensus</h2>
+
+<p>Use your insights as a means to engage your agency partners in a broader discussion about potential improvements to customer service. Seek consensus, where possible, across the many stakeholders who have an interest in your research project.</p>
+
+<p><img src="/HCD-Discovery-Concept-Guide/assets/img/stories-present-02.jpg" alt="Photograph of people collaborating to present Synthesis findings." /></p>
+
+<h2 id="communication">Communication</h2>
+
+<p>Lead your audience through the discovery work. First, take them briefly through the research process. Next, walk them through the synthesis and the insights gleaned there. After that, explain how the group filtered all the insights through the project brief to uncover opportunities.</p>
+
+<p>Your project brief — the focus and purpose of the research — is usually part of a greater initiative or administrative venture. Bring this to the attention of your audience as it helps to show that agency leaders are invested in this research topic.</p>
+
+<p>Present your materials in a polished yet warm manner. To ensure this, practice your pitch in advance, refine your content, and use quality presentation materials, such as an agency approved PowerPoint template.</p>
+
+<h3 id="suggested-format">Suggested Format</h3>
+
+<p>Communicate your findings clearly and concisely by listing the insights you found and the opportunities that came from them.</p>
+
+<p>Consider using a model like the one below as one way to share your findings to the audience. By deciding upon a standard communication method at the outset of your project, you help ensure that members of the research team, and later your audience, are speaking the same language and on the same page.</p>
+
+<p><img src="/HCD-Discovery-Concept-Guide/assets/img/comms-04.svg" alt="Illustration of a slide with an Insight at the top center and three Opportunities listed beneath it." /></p>
+
+    </div>
+  </main>
+</div>
+
+
+<footer class="usa-footer site-footer" role="contentinfo">
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container footer-content">
+      <h3>Become part of the community</h3>
+      <p>
+        The Lab at OPM is both a space and practice.
+      </p>
+    </div>
+    <div class="footer-section-bottom">
+      <div class="grid-container">
+        <div class="logo-links">
+          <a href="http://www.gsa.gov/">
+            <img src="/HCD-Discovery-Concept-Guide/img/lab-logos/Logo_2017_color_RGB-01.svg" alt="The Lab" />
+          </a>
+        </div>
+        <p>
+          The Lab is part of the Office of Personnel Management.
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>

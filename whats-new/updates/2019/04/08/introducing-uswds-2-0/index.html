@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <meta name="robots" content="noindex, nofollow">
+  
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>Introducing USWDS 2.0 | U.S. Web Design System (USWDS)</title>
+<meta property="og:title" content="Introducing USWDS 2.0 | U.S. Web Design System (USWDS)">
+
+
+<meta name="description" content="Today, we’re launching U.S. Web Design System 2.0 (USWDS 2.0), a new foundation for the future of our design system. This new version was designed to make it easier for any project to integrate USWDS and use it to support both your mission and the needs of your audience.">
+<meta property="og:description" content="Today, we’re launching U.S. Web Design System 2.0 (USWDS 2.0), a new foundation for the future of our design system. This new version was designed to make it easier for any project to integrate USWDS and use it to support both your mission and the needs of your audience.">
+
+<meta name="twitter:card" value="summary_large_image">
+<meta name="twitter:site" content="@USWDS">
+<meta property="og:type" content="article">
+
+
+
+
+
+  
+  <meta property="og:image" content="/HCD-Discovery-Concept-Guide/img/introducing-uswds-2-0/feature-image.jpg">
+
+  
+  <meta property="og:image" content="/HCD-Discovery-Concept-Guide/img/introducing-uswds-2-0/feature-image.jpg">
+
+
+
+
+<!-- Include Typetura Responsive Typography
+================================================== -->
+<script src="https://typetura-civic.s3.us-east-2.amazonaws.com/typetura.js"></script>
+<link rel="stylesheet" href="https://typetura-civic.s3.us-east-2.amazonaws.com/civic.css" />
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-192.png">
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/HCD-Discovery-Concept-Guide/assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+<!-- env: dev -->
+
+<style>
+  * {
+    scroll-behavior: smooth !important
+  }
+  h1:target,
+  h2:target,
+  h3:target,
+  h4:target {
+    position: relative;
+    color: #2672de !important;
+  }
+
+  h1:target:before,
+  h2:target:before,
+  h3:target:before,
+  h4:target:before {
+    content: '•';
+    position: absolute;
+    left: -.75em;
+  }
+</style>
+
+
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-fonts.css">
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-components.css">
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-custom.css">
+<link rel="stylesheet" href="/HCD-Discovery-Concept-Guide/assets/css/uswds-utilities.css">
+
+
+  </head>
+  <body class="page-introducing-uswds-2-0 layout-post ">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+<header class="usa-header site-header site-header-dark" role="banner">
+  <div class="">
+    <div class="usa-logo site-logo" id="logo">
+      <em class="usa-logo__text">
+        <a class="margin-right-05" href="/HCD-Discovery-Concept-Guide/" title="Home" aria-label="U.S. Web Design System (USWDS) home">
+          <span class="site-title">HCD Guide Series</span>
+        </a>
+      </em>
+    </div>
+    <button class="usa-menu-btn">Menu</button>
+  </div>
+</header>
+<div class="usa-overlay"></div>
+
+<nav role="navigation" class="usa-nav site-nav sidenav-mobile">
+  <button class="usa-nav__close">
+    <span class="usa-sr-only">Close</span>
+  </button>
+
+  <form
+    id="search_form-mobile"
+    class="usa-search usa-search--small desktop:margin-right-4"
+    action="https://search.usa.gov/search"
+    accept-charset="UTF-8"
+    method="get">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <input type="hidden" name="affiliate" id="affiliate-mobile" value="uswds" />
+    <div role="search">
+      <label class="usa-sr-only" for="query-mobile">Search</label>
+      <input
+        id="query-mobile"
+        class="usa-input usagov-search-autocomplete"
+        name="query"
+        type="search"
+        autocomplete="off"/>
+      <button
+        class="usa-button margin-top-0"
+        type="submit"
+        name="commit">
+        <span class="usa-sr-only">Search</span>
+      </button>
+    </div>
+  </form>
+  <div class="usa-nav__inner">
+    <ul class="usa-nav__primary usa-accordion">
+      
+
+    </ul>
+    <div class="buttons">
+  <a
+    class="usa-button site-button-outline-secondary site-button-standards margin-x-0 desktop:margin-right-1 padding-x-05 desktop:padding-left-1 desktop:padding-right-05 desktop-lg:padding-left-205 desktop-lg:padding-right-2 font-lang-sm"
+    href="/HCD-Discovery-Concept-Guide/website-standards/"
+    onclick="ga('send', 'event', 'Read website standards', 'Clicked Read website standards from inside site');"
+  >
+    Read website standards
+  </a>
+  <a
+    class="usa-button site-button-outline-secondary site-button-download margin-x-0 desktop:margin-right-1 desktop:padding-left-1 desktop:padding-right-05 desktop-lg:padding-left-205 desktop-lg:padding-right-2 font-lang-sm"
+    href="/HCD-Discovery-Concept-Guide/download/"
+    onclick="ga('send', 'event', 'Downloaded code and design files', 'Clicked Download code and design files from inside site');"
+  >
+    Download <span class="version desktop:display-none desktop-lg:display-inline">v2.6.0</span>
+  </a>
+  <a
+    class="usa-button site-button-github margin-x-0 desktop:margin-right-4 font-lang-sm"
+    href="https://github.com/uswds/uswds"
+    onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');"
+  >
+    <?xml version="1.0" encoding="UTF-8"?><svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="33"
+  height="32"
+  viewBox="0 0 33 32"
+  class="logo"
+>
+  <title>Github logo</title>
+  <path
+    fill="#161514"
+    fill-rule="evenodd"
+    d="M16.288 0C7.294 0 0 7.293 0 16.29c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 1.635.115 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 1.367-.438 4.479 1.67a15.602 15.602 0 0 1 4.078-.549 15.62 15.62 0 0 1 4.078.549c3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 4.311 1.044 1.138 1.674 2.593 1.674 4.371 0 6.258-3.809 7.635-7.437 8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455C32.579 7.293 25.285 0 16.288 0"
+  />
+</svg>
+
+    <span class="text">View on GitHub</span>
+  </a>
+</div>
+
+
+  </div>
+</nav>
+
+
+<div class="default-container">
+  <aside class="sidenav">
+    
+    
+  </aside>
+
+  <main id="main-content" class="main-content">
+    <div class="styleguide-content usa-prose site-prose">
+    
+      
+<article id="whats-new-updates-2019-04-08-introducing-uswds-2-0">
+  <header class="post-meta">
+    <p class="post-category site-subheading">
+      updates
+    </p>
+
+    <h1 class="post-title font-lang-11 tablet:font-lang-14 text-thin">
+      
+      Introducing USWDS 2.0
+      
+    </h1>
+
+    
+    <span class="post-date site-subheading">By Dan O. Williams, Maya Benari</span>
+    
+    <time class="post-date site-subheading" datetime="2019-04-08T00:00:00">
+      April 8, 2019
+    </time>
+  </header>
+
+  <div class="post-content site-prose measure-4 margin-top-4">
+  
+    <p><img src="/HCD-Discovery-Concept-Guide/img/introducing-uswds-2-0/feature-image.jpg" alt="A colorful collection of screens and interface components" class="width-full tablet:width-tablet-lg maxw-full tablet:maxw-tablet-lg" /></p>
+
+<h2 class="line-height-sans-2" id="reinvent-the-experience-not-the-wheel">Reinvent the experience, not the wheel</h2>
+
+<p>Today, we’re launching <a href="https://v2.designsystem.digital.gov/">U.S. Web Design System 2.0</a> (USWDS 2.0), a new foundation for the future of our design system. This new version was designed to make it easier for any project to integrate USWDS and use it to support your mission and the needs of your audience.</p>
+
+<p>USWDS is a library of code, tools, and guidance to help government teams design and build fast, accessible, mobile-friendly government websites backed by user research and modern best practices. USWDS 2.0 is an important update to the design system — it introduces a powerful toolkit of new features to help make creating useful, consistent digital services faster, simpler, and more fun.</p>
+
+<p>We’re proud that USWDS currently powers nearly <a href="https://v2.designsystem.digital.gov/getting-started/showcase/all/">200 federal websites</a> and we’re committed to making the design system work better for <em>any</em> federal website. With USWDS 2.0 we’re introducing a design system that’s built to grow with your needs — to help teams build better, more engaging websites for the American public.</p>
+
+<p>Over the last two years, we’ve listened to the designers and developers using USWDS. We’ve conducted interviews with project teams, listened to public feedback, and paid attention to the issues in our <a href="https://github.com/uswds/">GitHub repos</a>. We’ve conducted our own research on how designers and developers communicate with each other, and the tools they use to prototype. This research and feedback shaped our priorities for USWDS 2.0:</p>
+
+<ul class="margin-left-neg-205">
+  <li>Encourage modular, iterative, user-centered design</li>
+  <li>Promote accessibility and mobile friendliness</li>
+  <li>Develop a consistent design language</li>
+  <li>Support designing with flexibility and coherence</li>
+  <li>Lead with dependable guidance</li>
+  <li>Allow teams to prototype and build quickly</li>
+  <li>Establish a reliable foundation for growth</li>
+</ul>
+
+<p>So, what’s new in USWDS 2.0?</p>
+
+<div class="margin-top-5 margin-bottom-1">
+  <img src="/HCD-Discovery-Concept-Guide/img/introducing-uswds-2-0/easier-incremental-adoption--alt.jpg" alt="Side by side illustrations show before-and-after examples of a web page. One has the original page and the other shows that page with just a few design system components added." class="width-full maxw-full" />
+</div>
+
+<h2 class="margin-top-0" id="easier-incremental-adoption">Easier incremental adoption</h2>
+
+<h3 class="margin-top-1 text-light" id="add-a-component-not-a-headache">Add a component, not a headache</h3>
+
+<p>You don’t need to totally redesign your existing site to <a href="https://v2.designsystem.digital.gov/documentation/">get started with USWDS</a>. Adding USWDS 2.0 doesn’t mean breaking existing site functionality, so it’s easier to make incremental changes. Our components and code play well with existing styles, and it’s easy to adapt our default styles to a look-and-feel appropriate to your audience.</p>
+
+<ul class="margin-left-neg-205">
+  <li>Isolated class-based styling won’t affect your existing styles</li>
+  <li>Customizable base font size</li>
+  <li>Supports custom typefaces</li>
+  <li>Provides resilient, modular components</li>
+</ul>
+
+<div class="margin-top-5 margin-bottom-1">
+  <img src="/HCD-Discovery-Concept-Guide/img/introducing-uswds-2-0/practical-design-tokens--alt.jpg" alt="An illustration of three designers and developers using design tokens to communicate their intention. They move from themes to components to a finished website." class="width-full maxw-full" />
+</div>
+
+<h2 class="margin-top-0" id="practical-design-tokens">Practical design tokens</h2>
+
+<h3 class="margin-top-1 text-light" id="a-common-language-for-designers-and-developers">A common language for designers and developers</h3>
+
+<p>Design and development are all about decision making. Making decisions and communicating these details with the team takes time and has a cost, both in money and energy. <a href="https://v2.designsystem.digital.gov/design-tokens/">USWDS 2.0 design tokens</a> are the common building blocks of visual design decisions (like color, typescale, and spacing units) that all USWDS projects share. By using design tokens, designers and developers spend more time solving problems and less time fussing over pixels, eyedroppering hex codes, and redlining.</p>
+
+<ul class="margin-left-neg-205">
+  <li>Design tokens are a common language between designers and developers</li>
+  <li>Creates simple standardized palettes</li>
+  <li>Makes for a streamlined handoff</li>
+  <li>Allows a faster response to feedback</li>
+  <li>Integrates with best-practice guidance</li>
+  <li>Provides coherent and expressive palettes</li>
+  <li>Even spacing units (based on 8px) yield reliable spacing and centering</li>
+  <li>Typescale outputs consistently and predictably, regardless of typeface</li>
+</ul>
+
+<div class="margin-top-5 margin-bottom-1">
+  <img src="/HCD-Discovery-Concept-Guide/img/introducing-uswds-2-0/accessible-color-system--alt.jpg" alt="Two rows of colors from light to dark and their accessible color combinations." class="width-full maxw-full" />
+</div>
+
+<h2 class="margin-top-0" id="an-accessible-color-system">An accessible color system</h2>
+
+<h3 class="margin-top-1 text-light" id="from-aa-large-to-aaa-section-508-contrast-made-simple">From AA Large to AAA: Section 508 contrast made simple</h3>
+
+<p>Making a good color decision means making an accessible color decision. The <a href="https://v2.designsystem.digital.gov/design-tokens/color/overview/">USWDS 2.0 color system</a> makes it simple and predictable to pick accessible color pairs. Each USWDS system color has a numeric grade (like the <code class="highlighter-rouge">50</code> in <code class="highlighter-rouge">red-50</code>). The difference between any two grades is what we call the magic number. Colors with magic numbers of 40+ achieve AA Large contrast, magic numbers of 50+ achieve AA contrast, and magic numbers of 70+ achieve AAA contrast.</p>
+
+<ul class="margin-left-neg-205">
+  <li>Magic number makes contrast decisions a snap</li>
+  <li>Encourages accessible color choices for your mission and brand</li>
+  <li>Supports practical project theme palettes</li>
+  <li>Is the foundation for expressive color families</li>
+</ul>
+
+<div class="margin-top-5 margin-bottom-1">
+  <img src="/HCD-Discovery-Concept-Guide/img/introducing-uswds-2-0/expressive-theming--alt.jpg" alt="An illustration shows five images of websites at different screen sizes, ranging from small to large — each with a different look and feel." class="width-full maxw-full" />
+</div>
+
+<h2 class="margin-top-0" id="expressive-theming">Expressive theming</h2>
+
+<h3 class="margin-top-1 text-light" id="powered-by-your-mission-and-user-needs">Powered by your mission and user needs</h3>
+
+<p>Every project is different. Different audiences, different missions, and different goals require different solutions. USWDS 2.0 helps teams reinvent the experience without reinventing the wheel with a flexible design system that encourages customization consistent with our best-practice guidance. Because using user-centered design to adapt our defaults and build new things shouldn’t mean abandoning USWDS guidance altogether.</p>
+
+<ul class="margin-left-neg-205">
+  <li>Normalized typefaces allow custom typeface support</li>
+  <li>It’s easier to match your brand to USWDS</li>
+  <li>Custom settings power themeable layouts</li>
+  <li>Integrated with tokens and utilities</li>
+</ul>
+
+<div class="margin-top-5 margin-bottom-1">
+  <img src="/HCD-Discovery-Concept-Guide/img/introducing-uswds-2-0/powerful-utility-classes--alt.jpg" alt="This illustration shows another before-and-after example of how a website can use utility classes to change the styles of site elements. Five stylized examples of code are given below the two versions of the page." class="width-full maxw-full" />
+</div>
+
+<h2 class="margin-top-0" id="powerful-utility-classes">Powerful utility classes</h2>
+
+<h3 class="margin-top-1 text-light" id="prototype-faster-to-get-your-designs-in-front-of-real-users">Prototype faster to get your designs in front of real users</h3>
+
+<p>Building and testing a prototype is an invaluable step to understanding how real people use our services. Utility classes are a modern way to use USWDS design tokens to rapidly test a new idea, make tweaks to existing components, or design in code. <a href="https://v2.designsystem.digital.gov/utilities/">USWDS utilities</a> help teams deliver actionable prototypes quickly and consistently, and make quick modifications to production components without writing high-specificity CSS.</p>
+
+<ul class="margin-left-neg-205">
+  <li>Build new components or modify old ones without touching production CSS</li>
+  <li>Uses modular, atomic, and mobile-first design</li>
+  <li>Optimized for legibility and comprehension</li>
+  <li>Sophisticated customization options</li>
+  <li>Easy to transfer into production Sass with integrated functions and mixins</li>
+  <li>25 KB gzipped, but optional</li>
+</ul>
+
+<div class="margin-top-5 margin-bottom-1">
+  <img src="/HCD-Discovery-Concept-Guide/img/introducing-uswds-2-0/simplified-12-column-layout-grid--alt.jpg" alt="An illustration shows a yellow 12-column grid system overlaid on a colorful website." class="width-full maxw-full" />
+</div>
+
+<h2 class="margin-top-0" id="simplified-12-column-layout-grid">Simplified 12-column layout grid</h2>
+
+<h3 class="margin-top-1 text-light" id="a-simple-powerful-flexible-grid">A simple, powerful, flexible grid</h3>
+
+<p>Layout grids give any website visual coherence. The <a href="https://v2.designsystem.digital.gov/utilities/layout-grid/">USWDS 2.0 layout grid</a> is a familiar flexbox-powered grid that gives predictable control to designers and developers. The grid’s simple, nestable structure means any component and any layout, large or small, can implement a grid in a snap — and its mobile-first layout options make them customizable to any screen or situation.</p>
+
+<ul class="margin-left-neg-205">
+  <li>Similar to Bootstrap 4 and Foundation</li>
+  <li>Uses a familiar row and column–based structure</li>
+  <li>Built with Flexbox</li>
+  <li>Predictable and nestable</li>
+  <li>Designed to be mobile-first and responsive</li>
+</ul>
+
+<div class="margin-top-5 margin-bottom-1">
+  <img src="/HCD-Discovery-Concept-Guide/img/introducing-uswds-2-0/public-sans-hello--alt.jpg" alt="The word Hello displayed in Public Sans as though being edited in a font editor." class="width-full maxw-full" />
+</div>
+
+<h2 class="margin-top-0" id="introducing-public-sans">Introducing Public Sans</h2>
+
+<h3 class="margin-top-1 text-light" id="a-free-open-source-typeface-from-uswds">A free, open source typeface from USWDS</h3>
+
+<p>USWDS 2.0 adds built-in support for custom typefaces, and sometimes you need one that’s simple, neutral, and isn’t Helvetica. <a href="https://github.com/uswds/public-sans">Public Sans</a> is an open source, free license typeface (SIL Open Font License 1.1) designed and maintained by USWDS, adapted from Libre Franklin. Just as with our components, we intend Public Sans to be an example of how to design an accessible open source typeface with contributions and feedback from the public — to deliver a useful, neutral, sans serif and continuously improve it.</p>
+
+<ul class="margin-left-neg-205">
+  <li>A neutral typeface for interfaces, headings, and body text</li>
+  <li>A consistent alternative to system fonts or other neutral sans serifs</li>
+  <li>Developed for outcome-based continuous improvement just like our components</li>
+  <li>Designed for legibility and readability</li>
+  <li>Features tabular numerals for data design</li>
+  <li>Free and open source</li>
+</ul>
+
+<div class="margin-top-5 margin-bottom-1">
+  <img src="/HCD-Discovery-Concept-Guide/img/introducing-uswds-2-0/built-to-grow--alt.jpg" alt="An expanding geometric flower formed from the USWDS logo." class="width-full maxw-full" />
+</div>
+
+<h2 class="margin-top-0" id="built-to-grow-designed-to-adapt">Built to grow, designed to adapt</h2>
+
+<h3 class="margin-top-1 text-light" id="a-stable-foundation-for-the-future">A stable foundation for the future</h3>
+
+<p>USWDS 2.0 is built to grow and designed to adapt. It exists to help teams build new things and explore new solutions — to be more useful to any federal website and to adapt to new problems and new insights. Our new release is the foundation for the future of the design system and a way to maintain predictable, reliable coherence in an ever-changing world of new technology and evolving expectations. We can’t wait to see what you build with it.</p>
+
+<ul class="margin-left-neg-205">
+  <li>No new components, but all new components</li>
+  <li>Consistent, predictable BEM naming</li>
+  <li>Overhauled documentation</li>
+  <li>Streamlined development process</li>
+  <li>Easier to integrate new components from outside projects</li>
+  <li>Prepared to grow and adapt to user needs and industry best practices</li>
+</ul>
+
+<p class="margin-top-6">Like any true 2.0, this is a living product. We’ll continue to test our decisions and assumptions with real-world feedback as it develops and evolves. We encourage you to explore USWDS 2.0, contribute your own code and ideas, and leave feedback on <a href="https://github.com/uswds/uswds/issues">GitHub</a>, <a href="mailto:uswds@support.digitalgov.gov">email</a>, or our <a href="https://chat.18f.gov/">Slack channel</a>. And join our new mailing list by sending an email to <a href="mailto:uswds-subscribe-request@listserv.gsa.gov">uswds-subscribe-request@listserv.gsa.gov</a>. We’ll use your input to continuously improve the system with ongoing regular releases. We’re listening.</p>
+
+<hr />
+
+<p>USWDS is a team effort, built in the open for the public good. A heartfelt thank you to everyone who contributes to the project and whose work supports and inspires our own — your passion, smarts, and support are invaluable. We can’t do it without you.</p>
+
+<p>A sincere thanks to Sara Cope, Stephanie Green, Jeremy Zilar, Jacob Parcell, Toni Bonitto, Andre Francisco, Dahianna Salazar Foreman, Wesley Thompson, Adam Biagianti, John Donmoyer, Brian Hurst, Steve Walker, Jen Thibault, Aviva Oskow, Christine Bath, Austin Hernandez, Nick Ng, Eddie Tejeda, Amir Reavis-Bey, Miguel Sousa, Scott Kellum, Eli Altman, Aaron Borden, Andrew Dunkman, Sawyer Hollenshead, Sha Hwang, Jared Cunha, Matt Langan, Heather Battaglia, T. Carter Baxter, Matt Yoder, David Way, nolawi, Amber Reed, Shawn Allen, Micah Taylor, Scott Weber, Brendan Sudol, Brandon Ruffridge, Atul Varma, Maria Marrero, bet4a, Robert Romore, Dave Methvin, Nick Schonning, cathrowe, fat32, Juliette Cezzar, Pablo Stanley, Eric Ronne, Ryan Thurlwell, Linzi Berry, Sam Soffes, Pablo Impallari, and Dave Crossland.</p>
+
+
+  
+  </div>
+</article>
+
+    
+    </div>
+  </main>
+</div>
+
+
+<footer class="usa-footer site-footer" role="contentinfo">
+  <div class="usa-footer__secondary-section">
+    <div class="grid-container footer-content">
+      <h3>Become part of the community</h3>
+      <p>
+        The Lab at OPM is both a space and practice.
+      </p>
+    </div>
+    <div class="footer-section-bottom">
+      <div class="grid-container">
+        <div class="logo-links">
+          <a href="http://www.gsa.gov/">
+            <img src="/HCD-Discovery-Concept-Guide/img/lab-logos/Logo_2017_color_RGB-01.svg" alt="The Lab" />
+          </a>
+        </div>
+        <p>
+          The Lab is part of the Office of Personnel Management.
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>
